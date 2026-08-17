@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FULGME Journal | Forum for United Leaders in Graduate Medical Education</title>
+<meta name="description" content="FULGME Journal. Peer-reviewed, open-access scholarship in graduate medical education administration. ISSN 3065-582x. Browse and read issues online or download the PDF.">
+<link rel="canonical" href="https://journal.fulgme.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FULGME Journal">
+<meta property="og:title" content="FULGME Journal">
+<meta property="og:description" content="Peer-reviewed, open-access scholarship in graduate medical education administration.">
+<meta property="og:url" content="https://journal.fulgme.org/">
+<meta name="citation_journal_title" content="FULGME: Forum for United Leaders in Graduate Medical Education">
+<meta name="citation_issn" content="3065-582x">
+<meta name="citation_publisher" content="Forum for United Leaders in Graduate Medical Education">
+<style>
+:root{
+  --blue:#0B3C5D;--blue-accent:#2F6F95;--gold:#CFAF5A;--gold-muted:#E6D3A3;--gold-dark:#7A5F14;
+  --slate:#4A4A4A;--ink:#1F2A33;--bg:#F5F7FA;--white:#fff;--rule:#DCE3EB;
+  --serif:Georgia,"Times New Roman",Times,serif;
+  --sans:"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-accent);text-underline-offset:2px}
+a:hover{color:var(--blue)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:2px}
+.skip{position:absolute;left:-9999px;background:var(--blue);color:#fff;padding:.75rem 1.25rem;z-index:100;text-decoration:none}
+.skip:focus{left:.5rem;top:.5rem}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+header.mast{background:var(--blue);color:#fff;padding:3rem 0 2.5rem;border-bottom:5px solid var(--gold)}
+header.mast h1{font-family:var(--serif);font-size:clamp(2.1rem,6vw,3.3rem);margin:0 0 .4rem;line-height:1.1}
+header.mast .tm{font-size:.34em;vertical-align:super;color:var(--gold);font-family:var(--sans);font-weight:600;letter-spacing:.03em}
+header.mast p{margin:0;color:#D6E2EC;max-width:58ch}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.badges li{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;background:rgba(255,255,255,.12);border:1px solid rgba(207,175,90,.55);padding:.35rem .7rem;border-radius:999px}
+.badges li.issn{text-transform:none;letter-spacing:.04em}
+main{padding:2.5rem 0 1rem}
+h2.sec{font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.85rem);color:var(--blue);margin:0 0 1.1rem}
+.issue{background:var(--white);border:1px solid var(--rule);border-radius:8px;box-shadow:0 1px 2px rgba(11,60,93,.06),0 6px 20px rgba(11,60,93,.07);padding:clamp(1.25rem,3vw,2rem);margin:0 0 1.5rem;display:grid;grid-template-columns:110px minmax(0,1fr);gap:clamp(1rem,3vw,2rem);align-items:start}
+@media (max-width:600px){.issue{grid-template-columns:1fr}}
+.spine{background:#F8F4E8;border:1px solid var(--gold-muted);border-radius:6px;padding:.9rem .6rem;text-align:center}
+.spine .n{font-family:var(--serif);font-size:2.2rem;font-weight:700;color:var(--blue);line-height:1;display:block}
+.spine .l{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);font-weight:700}
+.issue h3{font-family:var(--serif);font-size:clamp(1.2rem,2.8vw,1.5rem);color:var(--blue);margin:0 0 .4rem;line-height:1.28}
+.issue .date{margin:0 0 .8rem;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);font-weight:600}
+.issue ol{margin:.2rem 0 1.1rem;padding-left:0;list-style:none}
+.issue ol li{padding:.32rem 0;font-size:.95rem;border-bottom:1px solid #F0F4F7}
+.issue ol li:last-child{border-bottom:0}
+.issue ol a{color:var(--ink);text-decoration:none}
+.issue ol a:hover{color:var(--blue-accent);text-decoration:underline}
+.issue ol .id{font-weight:700;color:var(--gold-dark);margin-right:.45rem;white-space:nowrap}
+.inote{margin:0 0 1.1rem;font-size:.83rem;color:var(--slate);font-style:italic;max-width:70ch}
+.doi{font-size:.83rem;color:var(--slate);margin:0 0 1.1rem}
+.doi code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#F1F5F8;padding:.15rem .4rem;border-radius:3px;color:var(--ink);font-size:.9em}
+.row{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.45rem;font-size:.9rem;font-weight:600;padding:.6rem 1.05rem;border-radius:5px;border:1px solid var(--blue);background:var(--blue);color:#fff;text-decoration:none;line-height:1.2}
+.btn:hover{background:#08304a;color:#fff}
+.btn.ghost{background:transparent;color:var(--blue);border-color:#B9C7D4}
+.btn.ghost:hover{background:#EDF2F7;color:var(--blue)}
+.about{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:clamp(1.25rem,3vw,2rem);margin:2rem 0 0}
+.about p{margin:0 0 .8rem;max-width:72ch}
+.about p:last-child{margin:0}
+footer{background:var(--blue);color:#C9D8E3;margin-top:2.5rem;padding:2rem 0 2.25rem;border-top:5px solid var(--gold);font-size:.86rem}
+footer a{color:var(--gold-muted)}
+footer p{margin:0 0 .4rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="mast">
+  <div class="wrap">
+    <h1>FULGME<span class="tm">TM</span> Journal</h1>
+    <p>Forum for United Leaders in Graduate Medical Education. A peer-reviewed, open-access journal advancing scholarship, innovation, and professional development in graduate medical education administration.</p>
+    <ul class="badges">
+      <li>Peer reviewed</li>
+      <li>Open access</li>
+      <li class="issn">ISSN 3065-582x (online)</li>
+      <li class="issn">ISSN 3065-5811 (print)</li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+  <h2 class="sec">Issues</h2>
+
+  <!-- ============================================================
+       TO ADD A NEW ISSUE: copy this whole <article class="issue">
+       block, paste it ABOVE the current newest issue, and update
+       the issue number, date, article list, DOIs, and the two links.
+       ============================================================ -->
+  <article class="issue">
+    <div class="spine"><span class="n">3</span><span class="l">Issue</span></div>
+    <div>
+      <h3>Issue 3</h3>
+      <p class="date">August 2026</p>
+      <ol>
+        <li><span class="id">A1</span><a href="issue-3/a1/">Program Coordinator Well-Being Initiative: A Year in Review</a></li>
+        <li><span class="id">A2</span><a href="issue-3/a2/">Centering the Role of the GME Director in Institutional Success</a></li>
+        <li><span class="id">A3</span><a href="issue-3/a3/">GME and the United States Military: Structure, Integration, and Comparative Perspectives</a></li>
+        <li><span class="id">A4</span><a href="issue-3/a4/">Building a Collaborative Network for GME Coordinators in Puerto Rico</a></li>
+        <li><span class="id">A5</span><a href="issue-3/a5/">[Special] New Board Member Perspective: Look How Far We Have Come</a></li>
+      </ol>
+      <p class="doi">Issue DOI <code>10.70785/JJXN8215</code></p>
+      <div class="row">
+        <a class="btn" href="issue-3/">Read Issue 3 <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="issue-3/pdf/FULGME-Journal-Issue-3-August-2026.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="issue">
+    <div class="spine"><span class="n">2</span><span class="l">Issue</span></div>
+    <div>
+      <h3>Issue 2</h3>
+      <p class="date">April 2025</p>
+      <ol>
+        <li><span class="id">A1</span><a href="issue-2/a1/">Development and Formation of a Program Administrators Council to Support the Professional Development of Program Administrators in Graduate Medical Education</a></li>
+        <li><span class="id">A2</span><a href="issue-2/a2/">Advocating for Resident &amp; Fellow Well-Being: A Data-Driven Approach for GME</a></li>
+        <li><span class="id">A3</span><a href="issue-2/a3/">Networking in Graduate Medical Education: A Path to Success</a></li>
+        <li><span class="id">A4</span><a href="issue-2/a4/">A Perspective: The Keys to Becoming an Exceptional Program Coordinator in Graduate Medical Education</a></li>
+      </ol>
+      <p class="doi">Issue DOI <code>10.70785/QSAW8897</code></p>
+      <div class="row">
+        <a class="btn" href="issue-2/">Read Issue 2 <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="issue-2/pdf/FULGME-Journal-Issue-2-April-2025.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="issue">
+    <div class="spine"><span class="n">1</span><span class="l">Issue</span></div>
+    <div>
+      <h3>Issue 1</h3>
+      <p class="date">November 2024</p>
+      <ol>
+        <li><span class="id">A1</span><a href="issue-1/a1/">Managing Dual-Track Systems: A Program Integration Roadmap (PIR) for ACGME and non-ACGME Programs and Institutions</a></li>
+        <li><span class="id">A2</span><a href="issue-1/a2/">The Crucial Role of GME Program Coordinators in Shaping the Physician Workforce</a></li>
+        <li><span class="id">A3</span><a href="issue-1/a3/">Standardizing and Enhancing the Tracking of Continuing Medical Education (CME) within Graduate Medical Education (GME) Programs: A comprehensive Analysis</a></li>
+      </ol>
+      <p class="doi">Issue DOI <code>10.70785/SONR4755</code></p>
+      <p class="inote">Inaugural issue. Predates FULGME&rsquo;s ISSN and DOI registration; the identifiers shown were assigned afterwards.</p>
+      <div class="row">
+        <a class="btn" href="issue-1/">Read Issue 1 <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="issue-1/pdf/FULGME-Journal-Issue-1-November-2024.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </article>
+
+  <section class="about" aria-labelledby="about-h">
+    <h2 class="sec" id="about-h">About the journal</h2>
+    <p>FULGME is a peer-reviewed, open-access journal dedicated to advancing scholarship, innovation, and professional development within graduate medical education administration. We publish research, innovation, perspectives, brief reports, and reviews, with submissions accepted year-round.</p>
+    <p>Journal DOI <code>10.70785/IHSN6820</code> &nbsp;&middot;&nbsp; ISSN 3065-582x (online), 3065-5811 (print)</p>
+    <p>Reach us at <a href="mailto:info@fulgme.org">info@fulgme.org</a> or visit <a href="https://www.fulgme.org">fulgme.org</a>.</p>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://www.fulgme.org">fulgme.org</a> &nbsp;&middot;&nbsp; <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
+    <p>Copyright &copy; 2026 Forum for United Leaders in Graduate Medical Education &nbsp;&bull;&nbsp; ISSN 3065-582x &nbsp;&bull;&nbsp; Journal DOI 10.70785/IHSN6820</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Periodical",
+  "name":"FULGME: Forum for United Leaders in Graduate Medical Education",
+  "issn":"3065-582x",
+  "url":"https://journal.fulgme.org/",
+  "publisher":{"@type":"Organization","name":"Forum for United Leaders in Graduate Medical Education","url":"https://www.fulgme.org","email":"info@fulgme.org"},
+  "hasPart":[{"@type":"PublicationIssue","issueNumber":"3","datePublished":"2026-08","url":"https://journal.fulgme.org/issue-3/"},{"@type":"PublicationIssue","issueNumber":"2","datePublished":"2025-04","url":"https://journal.fulgme.org/issue-2/"},{"@type":"PublicationIssue","issueNumber":"1","datePublished":"2024-11","url":"https://journal.fulgme.org/issue-1/"}]
+}
+</script>
+</body>
+</html>
