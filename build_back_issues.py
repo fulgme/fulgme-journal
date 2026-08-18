@@ -185,7 +185,7 @@ def issue_page(ISSUE, ARTICLES):
 <footer>
   <div class="wrap iwrap">
     <p><a href="../">FULGME Journal</a> &nbsp;&middot;&nbsp; <a href="https://www.fulgme.org">fulgme.org</a> &nbsp;&middot;&nbsp; <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
-    <p class="legal">Copyright &copy; {ISSUE["pub_iso"][:4]} Forum for United Leaders in Graduate Medical Education &nbsp;&bull;&nbsp;
+    <p class="legal">&copy; The author(s). Published by the Forum for United Leaders in Graduate Medical Education under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> &nbsp;&bull;&nbsp;
       {ISSUE["label"]}, {ISSUE["published"]} &nbsp;&bull;&nbsp; ISSN: {ISSUE["issn"]} &nbsp;&bull;&nbsp;
       Journal DOI: {ISSUE["journal_doi"]} &nbsp;&bull;&nbsp; Issue DOI: {ISSUE["issue_doi"]}</p>
   </div>

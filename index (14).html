@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FULGME Journal, Issue 3, August 2026 | Forum for United Leaders in Graduate Medical Education</title>
+
+<meta name="description" content="FULGME Journal Issue 3, August 2026. Peer-reviewed, open-access scholarship in graduate medical education administration. Five articles on coordinator well-being, GME Director authority, military GME, coordinator networking, and the evolution of the GME coordinator role.">
+<link rel="canonical" href="https://journal.fulgme.org/issue-3/">
+
+<!-- Dublin Core / citation metadata for indexing and DOI resolution -->
+<meta name="citation_journal_title" content="FULGME: Forum for United Leaders in Graduate Medical Education">
+<meta name="citation_journal_abbrev" content="FULGME">
+<meta name="citation_publisher" content="Forum for United Leaders in Graduate Medical Education">
+<meta name="citation_issn" content="3065-582x">
+<meta name="citation_issue" content="3">
+<meta name="citation_publication_date" content="2026/08">
+<meta name="citation_doi" content="10.70785/JJXN8215">
+<meta name="citation_pdf_url" content="https://journal.fulgme.org/issue-3/pdf/FULGME-Journal-Issue-3-August-2026.pdf">
+<meta name="DC.title" content="FULGME Journal, Issue 3, August 2026">
+<meta name="DC.publisher" content="Forum for United Leaders in Graduate Medical Education">
+<meta name="DC.date" content="2026-08">
+<meta name="DC.identifier" content="10.70785/JJXN8215">
+<meta name="DC.rights" content="Open access. Copyright 2026 Forum for United Leaders in Graduate Medical Education.">
+
+<!-- Social sharing -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="FULGME Journal">
+<meta property="og:title" content="FULGME Journal, Issue 3, August 2026">
+<meta property="og:description" content="Peer-reviewed, open-access scholarship in graduate medical education administration. Read Issue 3 online or download the PDF.">
+<meta property="og:url" content="https://journal.fulgme.org/issue-3/">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+  --blue:#0B3C5D;
+  --blue-accent:#2F6F95;
+  --gold:#CFAF5A;
+  --gold-muted:#E6D3A3;
+  --gold-dark:#7A5F14; /* accessible gold for small text on light backgrounds (6.0:1) */
+  --slate:#4A4A4A;
+  --ink:#1F2A33;
+  --bg:#F5F7FA;
+  --white:#FFFFFF;
+  --rule:#DCE3EB;
+  --shadow:0 1px 2px rgba(11,60,93,.06), 0 6px 20px rgba(11,60,93,.07);
+  --maxw:1120px;
+  --serif:Georgia,"Times New Roman",Times,serif;
+  --sans:"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto}
+a{color:var(--blue-accent);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:2px}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--blue);color:#fff;padding:.75rem 1.25rem;z-index:100;text-decoration:none}
+.skip:focus{left:.5rem;top:.5rem}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+
+/* ---------- Masthead ---------- */
+.masthead{background:var(--blue);color:#fff;padding:2.5rem 0 2rem;border-bottom:5px solid var(--gold)}
+.masthead .eyebrow{
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-muted);margin:0 0 .85rem;font-weight:600
+}
+.masthead h1{
+  font-family:var(--serif);font-size:clamp(2rem,5.5vw,3.1rem);line-height:1.1;
+  margin:0 0 .35rem;letter-spacing:-.01em
+}
+.masthead .sub{margin:0;color:#D6E2EC;font-size:clamp(.95rem,2.2vw,1.08rem);max-width:52ch}
+.masthead .tm{font-size:.34em;vertical-align:super;color:var(--gold);letter-spacing:.03em;font-family:var(--sans);font-weight:600}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.badges li{
+  font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+  background:rgba(255,255,255,.12);border:1px solid rgba(207,175,90,.55);
+  color:#fff;padding:.35rem .7rem;border-radius:999px
+}
+.badges li.issn{text-transform:none;letter-spacing:.04em}
+
+/* ---------- Action bar ---------- */
+.actions{background:var(--white);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(11,60,93,.05)}
+.actions .wrap{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;padding-top:.7rem;padding-bottom:.7rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-family:var(--sans);font-size:.9rem;font-weight:600;
+  padding:.6rem 1.05rem;border-radius:5px;border:1px solid var(--blue);
+  background:var(--blue);color:#fff;text-decoration:none;cursor:pointer;line-height:1.2
+}
+.btn:hover{background:#08304a;color:#fff}
+.btn.ghost{background:transparent;color:var(--blue);border-color:#B9C7D4}
+.btn.ghost:hover{background:#EDF2F7;color:var(--blue)}
+.actions .spacer{flex:1 1 auto}
+.actions .issue-tag{font-size:.82rem;color:var(--slate);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+@media (max-width:640px){.actions{position:static}.actions .spacer{display:none}.actions .issue-tag{width:100%}}
+
+/* ---------- Layout ---------- */
+main{padding:2.5rem 0 1rem}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:clamp(1.5rem,3vw,3rem);align-items:start}
+/* On narrow screens, surface contents and issue info above the reading column,
+   mirroring the order on the printed cover. */
+@media (max-width:900px){.cols{grid-template-columns:1fr}.side{order:-1}}
+
+.card{background:var(--white);border:1px solid var(--rule);border-radius:8px;box-shadow:var(--shadow)}
+
+/* ---------- Sidebar ---------- */
+.side{position:sticky;top:5rem;display:grid;gap:1.25rem}
+@media (max-width:900px){.side{position:static}}
+.side h2{
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);
+  margin:0;padding:.9rem 1.1rem;border-bottom:1px solid var(--rule);background:#F8FAFC;
+  border-radius:8px 8px 0 0;font-weight:700
+}
+.toc ol{list-style:none;margin:0;padding:.6rem 0}
+.toc li{border-bottom:1px solid #EEF2F6}
+.toc li:last-child{border-bottom:0}
+.toc a{display:block;padding:.7rem 1.1rem;text-decoration:none;color:var(--ink);font-size:.93rem;line-height:1.45}
+.toc a:hover{background:#F3F7FA;color:var(--blue)}
+.toc .id{display:inline-block;font-weight:700;color:var(--gold-dark);margin-right:.45rem;font-variant-numeric:tabular-nums}
+.meta-list{margin:0;padding:.85rem 1.1rem 1.1rem;font-size:.88rem}
+.meta-list div{display:grid;grid-template-columns:8.5rem 1fr;gap:.35rem;padding:.32rem 0;border-bottom:1px dotted #E3E9EF}
+.meta-list div:last-child{border-bottom:0}
+.meta-list dt{color:var(--slate);font-weight:600}
+.meta-list dd{margin:0;word-break:break-word}
+
+/* ---------- Content blocks ---------- */
+section{margin:0 0 1.75rem}
+.block{padding:clamp(1.25rem,3vw,2rem)}
+h2.sec{font-family:var(--serif);font-size:clamp(1.35rem,3vw,1.7rem);color:var(--blue);margin:0 0 .9rem;line-height:1.25}
+.lede p{margin:0 0 1rem;max-width:70ch}
+.lede p:last-child{margin-bottom:0}
+
+.pullquote{
+  margin:1.5rem 0 0;padding:1.1rem 1.3rem;background:#F8F6EF;
+  border-left:4px solid var(--gold);border-radius:0 6px 6px 0
+}
+.pullquote blockquote{margin:0;font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--blue);line-height:1.5}
+.pullquote cite{display:block;margin-top:.55rem;font-style:normal;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--slate)}
+
+/* ---------- Articles ---------- */
+article{scroll-margin-top:5.5rem;margin:0 0 1.75rem}
+.art-head{padding:clamp(1.25rem,3vw,2rem);border-bottom:1px solid var(--rule)}
+.art-top{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:0 0 .8rem}
+.kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--white);background:var(--blue-accent);padding:.3rem .6rem;border-radius:3px}
+.kicker.special{background:var(--gold);color:#3B2E0A}
+.artid{
+  margin-left:auto;font-family:var(--serif);font-size:1.15rem;font-weight:700;
+  color:var(--gold-dark);line-height:1;letter-spacing:.02em;
+  background:#F8F4E8;border:1px solid var(--gold-muted);border-radius:4px;padding:.28rem .55rem
+}
+@media (max-width:520px){.artid{margin-left:0}}
+article h3{font-family:var(--serif);font-size:clamp(1.2rem,2.8vw,1.55rem);line-height:1.28;color:var(--blue);margin:0 0 .6rem}
+.byline{margin:0;font-size:.98rem;font-weight:600;color:var(--ink)}
+.affil{margin:.2rem 0 0;font-size:.88rem;color:var(--slate)}
+.doi{margin:.7rem 0 0;font-size:.82rem;color:var(--slate);display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.doi code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em;background:#F1F5F8;padding:.15rem .4rem;border-radius:3px;color:var(--ink)}
+.copy{font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;background:transparent;border:1px solid #C6D2DC;color:var(--blue);padding:.28rem .55rem;border-radius:3px;cursor:pointer}
+.copy:hover{background:#EDF2F7}
+
+.abstract{background:#F7F9FB;border-bottom:1px solid var(--rule);padding:clamp(1.1rem,2.5vw,1.6rem) clamp(1.25rem,3vw,2rem)}
+.abstract h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:0 0 .55rem;font-weight:700}
+.abstract p{margin:0;font-size:.96rem;max-width:78ch}
+
+.art-body{padding:clamp(1.25rem,3vw,2rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 clamp(1.5rem,3vw,2.5rem)}
+.art-body > *{min-width:0}
+.art-body h4{font-size:1rem;color:var(--blue);margin:1.35rem 0 .4rem;letter-spacing:.01em}
+.art-body > h4:first-child{margin-top:0}
+.art-body p{margin:0 0 .5rem;font-size:.96rem}
+.art-body ul{margin:.2rem 0 .6rem;padding-left:1.15rem}
+.art-body li{margin:0 0 .3rem;font-size:.96rem}
+.art-foot{padding:0 clamp(1.25rem,3vw,2rem) clamp(1.25rem,3vw,2rem);display:flex;flex-wrap:wrap;gap:.6rem}
+
+/* ---------- Resources ---------- */
+.res{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1.25rem,3vw,2.25rem);align-items:start}
+@media (max-width:720px){.res{grid-template-columns:1fr}}
+.res .panel{background:#F8FAFC;border:1px solid var(--rule);border-radius:6px;padding:1.1rem 1.25rem}
+.res .panel h4{margin-top:0}
+.res h4 a{color:var(--blue);text-decoration:none;border-bottom:2px solid var(--gold-muted)}
+.res h4 a:hover{color:var(--blue-accent);border-bottom-color:var(--gold)}
+.ftype{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);background:#EEF2F6;border-radius:3px;padding:.1rem .35rem;margin-left:.2rem;vertical-align:1px}
+.res h4{font-size:.98rem;color:var(--blue);margin:0 0 .3rem}
+.res p{margin:0 0 1.1rem;font-size:.93rem}
+.conf{margin:0;padding:0;list-style:none}
+.conf li{padding:.7rem 0;border-bottom:1px solid #EEF2F6;font-size:.93rem}
+.conf li:last-child{border-bottom:0}
+.conf strong{display:block;color:var(--blue)}
+.conf span{color:var(--slate)}
+
+.cta{background:var(--blue);color:#fff;border-radius:8px;padding:clamp(1.5rem,3.5vw,2.25rem)}
+.cta h2{font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.8rem);margin:0 0 .7rem;color:#fff}
+.cta p{margin:0 0 .9rem;color:#DCE7EF;max-width:64ch}
+.cta ul{margin:.3rem 0 1.3rem;padding-left:1.2rem;color:#DCE7EF}
+.cta li{margin:0 0 .35rem}
+.cta a.btn{background:var(--gold);border-color:var(--gold);color:#332608}
+.cta a.btn:hover{background:#BE9D45;border-color:#BE9D45;color:#332608}
+
+/* ---------- Citation box ---------- */
+.cite-box{background:#F8F6EF;border:1px solid var(--gold-muted);border-radius:8px;padding:1.2rem 1.4rem;margin:0 0 1.75rem}
+.cite-box h2{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin:0 0 .5rem;font-weight:700}
+.cite-box p{margin:0;font-family:var(--serif);font-size:1rem;line-height:1.55}
+
+/* ---------- Footer ---------- */
+footer{background:var(--blue);color:#C9D8E3;margin-top:2.5rem;padding:2.25rem 0 2.5rem;border-top:5px solid var(--gold);font-size:.87rem}
+footer a{color:var(--gold-muted)}
+footer .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-bottom:1.5rem}
+footer h2{font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 .5rem;font-weight:700}
+footer p{margin:0 0 .4rem}
+footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:1.25rem;font-size:.8rem;line-height:1.7}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---------- Print ---------- */
+@media print{
+  body{background:#fff;font-size:11pt}
+  .actions,.side,.skip,.copy,.cta a.btn{display:none!important}
+  .cols{display:block}
+  .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid}
+  .masthead,footer{background:#fff!important;color:#000!important;border-color:#0B3C5D}
+  .masthead h1,.masthead .sub,footer p,footer .legal{color:#000!important}
+  article{break-inside:avoid}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.85em;color:#555}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">August 2026 &nbsp;&middot;&nbsp; Issue 3</p>
+    <h1>FULGME<span class="tm">TM</span> Journal</h1>
+    <p class="sub">Forum for United Leaders in Graduate Medical Education. A peer-reviewed, open-access journal advancing scholarship, innovation, and professional development in graduate medical education administration.</p>
+    <ul class="badges">
+      <li>Peer reviewed</li>
+      <li>Open access</li>
+      <li class="issn">ISSN 3065-582x</li>
+    </ul>
+  </div>
+</header>
+
+<nav class="actions" aria-label="Issue actions">
+  <div class="wrap">
+    <a class="btn" href="pdf/FULGME-Journal-Issue-3-August-2026.pdf" download="FULGME-Journal-Issue-3-August-2026.pdf">
+      <span aria-hidden="true">&#8681;</span> Download PDF
+    </a>
+    <a class="btn ghost" href="pdf/FULGME-Journal-Issue-3-August-2026.pdf" target="_blank" rel="noopener">View PDF in browser</a>
+    <a class="btn ghost" href="#contents">Contents</a>
+    <span class="spacer"></span>
+    <span class="issue-tag">Issue 3 &middot; 2026</span>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap cols">
+
+  <div>
+    <section class="card block" aria-labelledby="board-msg">
+      <h2 class="sec" id="board-msg">A Message from the Board</h2>
+      <div class="lede">
+        <p>Welcome to the third edition of the FULGME Journal.</p>
+        <p>Graduate medical education is built by two communities. One holds the clinical expertise, the faculty appointments, and the medical degrees. The other holds the institutional memory, the compliance infrastructure, and the operational continuity that allows programs to function. For decades, that second community often worked behind the scenes without a formal scholarly voice or professional home. FULGME exists to change that.</p>
+        <p>This issue continues that mission. The articles featured here highlight the innovation, scholarship, leadership, and resilience of GME professionals across diverse settings. From coordinator well-being initiatives and leadership research to military GME and professional networking, each contribution reflects the growing impact of administrative professionals in advancing graduate medical education through research, collaboration, and service.</p>
+        <p>We are especially honored to feature our newest Board member, Crys S. Curkendoll-Draconi, PMP, AA, in a special section. Her perspective traces the evolution of the GME Coordinator role from the pre-competency era to today. As a member of the Coordinator Description Task Force, she helped transform years of advocacy into lasting recognition within the ACGME Common Program Requirements, leaving a legacy that continues to shape the profession.</p>
+        <p>FULGME is a peer-reviewed, open-access journal dedicated to advancing scholarship, innovation, and professional development within graduate medical education administration. We publish research, innovation, perspectives, brief reports, and reviews, with submissions accepted year-round.</p>
+        <p>Together, we are helping shape the future of graduate medical education. Reach us at <a href="mailto:info@fulgme.org">info@fulgme.org</a>.</p>
+      </div>
+      <div class="pullquote">
+        <blockquote>&ldquo;If they don&rsquo;t give you a seat at the table, bring a folding chair.&rdquo;</blockquote>
+        <cite>Shirley Chisholm</cite>
+      </div>
+    </section>
+
+    <h2 class="sr-only" id="articles-heading">Articles in this issue</h2>
+
+    <!-- A1 -->
+    <article class="card" id="a1" aria-labelledby="a1-title">
+      <div class="art-head">
+        <p class="art-top"><span class="kicker">Brief Report</span><span class="artid">A1</span></p>
+        <h3 id="a1-title">Program Coordinator Well-Being Initiative: A Year in Review</h3>
+        <p class="byline">Brant Weindorf</p>
+        <p class="affil">University of South Alabama</p>
+        <p class="doi">DOI <code>10.70785/EKFN3359</code>
+          <button class="copy" type="button" data-cite="Weindorf B. Program Coordinator Well-Being Initiative: A Year in Review. FULGME. 2026;(3):A1. DOI: 10.70785/EKFN3359">Copy citation</button>
+        </p>
+      </div>
+      <div class="abstract">
+        <h4>Abstract</h4>
+        <p>Program coordinators are essential to the success of graduate medical education programs, yet their well-being is often overlooked. In response to survey findings that identified concerns related to workplace resources, isolation, and overall well-being, a coordinator-led wellness initiative was implemented through the Program Coordinators Advocating for Wellness (PCAW) committee. After one year, participants reported improvements in workplace engagement, sense of community, and overall well-being. These findings suggest that low-cost, coordinator-focused wellness initiatives can positively impact job satisfaction and professional connectedness.</p>
+      </div>
+      <div class="art-body">
+        <div>
+          <h4>Background</h4>
+          <p>At one institution, coordinators reported a palpable sense of isolation and burnout driving high turnover. Initial survey data confirmed the problem: 56.2% lacked sufficient resources; 31.3% reported burnout. One coordinator noted a need for &ldquo;more communication and social connection.&rdquo;</p>
+          <h4>Methods</h4>
+          <p>Coordinators were surveyed in early 2024 and again in early 2025. The PCAW committee organized six events between March and November 2024 at no cost: two after-hours dinners, two potluck lunches, a private yoga session, and a campus farmer&rsquo;s market trip. Food events and yoga reported highest attendance. Analysis used descriptive and comparative statistics.</p>
+        </div>
+        <div>
+          <h4>Results</h4>
+          <ul>
+            <li>Looking forward to work: 43.8% to 75.0% (+31.2 pts)</li>
+            <li>Feeling isolated: 50.0% to 37.5% (decreased)</li>
+            <li>Overall well-being: 50.0% to 87.5% (+37.5 pts)</li>
+            <li>Job satisfaction: increased 18%</li>
+            <li>100% said PCAW improved community, well-being, and work-life balance</li>
+          </ul>
+          <h4>Conclusion</h4>
+          <p>Coordinator-focused wellness initiatives can positively impact well-being, workplace engagement, and professional connectedness. The success of PCAW shows that meaningful wellness programming can be implemented with minimal financial investment while building a stronger sense of community among program coordinators. Further evaluation at future milestones will help determine the long-term sustainability and impact of these initiatives.</p>
+        </div>
+      </div>
+      <div class="art-foot">
+        <a class="btn" href="a1/">Read full article <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="a1/pdf/FULGME_Vol_3_A1_August_2026.pdf" download="FULGME_Vol_3_A1_August_2026.pdf">Article PDF</a>
+      </div>
+    </article>
+
+    <!-- A2 -->
+    <article class="card" id="a2" aria-labelledby="a2-title">
+      <div class="art-head">
+        <p class="art-top"><span class="kicker">Perspective</span><span class="artid">A2</span></p>
+        <h3 id="a2-title">Centering the Role of the GME Director in Institutional Success</h3>
+        <p class="byline">Lisa Payne<sup>1</sup>, Donna Guidroz<sup>2</sup></p>
+        <p class="affil"><sup>1</sup> UCLA &nbsp;&middot;&nbsp; <sup>2</sup> Ochsner Health</p>
+        <p class="doi">DOI <code>10.70785/LLJT5147</code>
+          <button class="copy" type="button" data-cite="Payne L, Guidroz D. Centering the Role of the GME Director in Institutional Success. FULGME. 2026;(3):A2. DOI: 10.70785/LLJT5147">Copy citation</button>
+        </p>
+      </div>
+      <div class="abstract">
+        <h4>Abstract</h4>
+        <p>Drawing on a 2025 national survey of 101 GME Directors and senior institutional leaders, this perspective documents the expanding responsibilities of GME Directors, authority gaps limiting their effectiveness, and the structural investments institutions must make to align authority with accountability. It calls for investment in GME Director authority, visibility, and development as equal partners in dyad leadership alongside physician leaders.</p>
+      </div>
+      <div class="art-body">
+        <div>
+          <h4>A Highly Qualified, Under-Empowered Workforce</h4>
+          <p>72% of GME Directors hold a graduate or professional degree; 57% have worked in GME for more than a decade. Despite this, only 52% report having sufficient authority to fulfill their role. 36% answered &ldquo;somewhat&rdquo; and 12% reported lacking meaningful authority entirely.</p>
+          <h4>Responsibility Without Recognition</h4>
+          <p>Nearly all GME Directors are accountable for ACGME compliance (98%), budget oversight (86%), institutional goal execution (82%), and program growth (74%). Yet 75% spend most of their time on operational logistics, while formal evaluations rarely reflect these contributions.</p>
+          <p>Over 90% report experiencing burnout at least occasionally, with 25% reporting frequent burnout and 7% constant burnout.</p>
+          <h4>Beyond the Job Description</h4>
+          <p>GME Directors routinely serve as supervisors of coordinator teams, interpreters of evolving ACGME standards, collaborators with HR, Legal, and Risk Management, institutional memory during leadership turnover, and first responders during crises. These functions are critical yet rarely codified.</p>
+          <h4>Dyad Leadership in Practice</h4>
+          <p>The strongest institutions pair physician leaders with experienced GME administrators as equals. Administrative leaders must have seats at strategic tables, with evaluations reflecting their full scope of contribution.</p>
+        </div>
+        <div>
+          <h4>Five Actions Institutions Must Take</h4>
+          <ul>
+            <li>Clarify and standardize the GME Director role across titles and reporting lines.</li>
+            <li>Include GME Directors in strategic decisions on workforce planning and growth.</li>
+            <li>Align performance metrics with operational and leadership reality, not compliance alone.</li>
+            <li>Invest in development: mentorship, TAGME certification, and leadership academies.</li>
+            <li>Advance dyad partnerships with shared goals and co-led initiatives.</li>
+          </ul>
+          <h4>Call for Further Research</h4>
+          <p>The 2025 GME Director Survey is an early effort to formally document the scope and challenges of GME administrative leadership. More data are needed on long-term program impact, burnout patterns, and best practices in dyad leadership.</p>
+        </div>
+      </div>
+      <div class="art-foot">
+        <a class="btn" href="a2/">Read full article <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="a2/pdf/FULGME_Vol_3_A2_August_2026.pdf" download="FULGME_Vol_3_A2_August_2026.pdf">Article PDF</a>
+      </div>
+    </article>
+
+    <!-- A3 -->
+    <article class="card" id="a3" aria-labelledby="a3-title">
+      <div class="art-head">
+        <p class="art-top"><span class="kicker">Perspective</span><span class="artid">A3</span></p>
+        <h3 id="a3-title">Graduate Medical Education and the United States Military: Structure, Integration, and Comparative Perspectives</h3>
+        <p class="byline">Theraesa Jones-Cleveland, BSHM, C-TAGME</p>
+        <p class="affil">Colorado Technical University &nbsp;&middot;&nbsp; Cleveland Clinic Foundation, GME Program Manager</p>
+        <p class="doi">DOI <code>10.70785/XZGA3877</code>
+          <button class="copy" type="button" data-cite="Jones-Cleveland T. Graduate Medical Education and the United States Military: Structure, Integration, and Comparative Perspectives. FULGME. 2026;(3):A3. DOI: 10.70785/XZGA3877">Copy citation</button>
+        </p>
+      </div>
+      <div class="abstract">
+        <h4>Abstract</h4>
+        <p>This paper analyzes the relationship between GME and the U.S. military, examining the structure of military GME programs, their integration within military healthcare, and comparative features of military versus civilian residency pathways. Quantitative data, a case study, and practical recommendations for medical students, educators, and policymakers are incorporated.</p>
+      </div>
+      <div class="art-body">
+        <div>
+          <h4>Scale and Structure</h4>
+          <p>The DoD oversees ACGME-accredited programs across Army, Navy, and Air Force medical centers. In 2024, approximately 2,600 physicians were trained annually. Admission typically flows through HPSP or USUHS. Trainees are commissioned officers with military service obligations.</p>
+          <h4>Military vs. Civilian Programs</h4>
+          <p>Both program types meet ACGME standards. Military programs add operational medicine, leadership development, and deployment preparation. Civilian programs offer larger patient volumes and broader subspecialties. Average civilian internal medicine programs train 30 to 50 residents annually; military 10 to 20.</p>
+          <h4>Military Trainees in Civilian Programs</h4>
+          <p>Approximately 15% of military GME trainees participated in civilian residencies in 2024. They remain commissioned officers balancing military obligations alongside civilian training demands. 90% of military-trained physicians report deployment readiness within six months of completing residency.</p>
+        </div>
+        <div>
+          <h4>Recommendations: Medical Students</h4>
+          <ul>
+            <li>Evaluate personal goals and readiness for service obligations before committing.</li>
+            <li>Research specialty availability in both military and civilian pathways.</li>
+            <li>Seek mentorship from current or former military physicians.</li>
+          </ul>
+          <h4>Recommendations: Educators</h4>
+          <ul>
+            <li>Integrate operational medicine, leadership, and military ethics into curricula.</li>
+            <li>Facilitate collaborative training between civilian and military institutions.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="art-foot">
+        <a class="btn" href="a3/">Read full article <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="a3/pdf/FULGME_Vol_3_A3_August_2026.pdf" download="FULGME_Vol_3_A3_August_2026.pdf">Article PDF</a>
+      </div>
+    </article>
+
+    <!-- A4 -->
+    <article class="card" id="a4" aria-labelledby="a4-title">
+      <div class="art-head">
+        <p class="art-top"><span class="kicker">Brief Report</span><span class="artid">A4</span></p>
+        <h3 id="a4-title">Building a Collaborative Network for GME Coordinators in Puerto Rico: A Social Media-Based Approach</h3>
+        <p class="byline">Cristina Morales, MBA, C-TAGME</p>
+        <p class="affil">Mayaguez Medical Center, Family Medicine Residency Program, Puerto Rico</p>
+        <p class="doi">DOI <code>10.70785/ZMUQ2206</code>
+          <button class="copy" type="button" data-cite="Morales C. Building a Collaborative Network for GME Coordinators in Puerto Rico: A Social Media-Based Approach. FULGME. 2026;(3):A4. DOI: 10.70785/ZMUQ2206">Copy citation</button>
+        </p>
+      </div>
+      <div class="abstract">
+        <h4>Abstract</h4>
+        <p>GME coordinators in Puerto Rico lack structured opportunities for collaboration and professional development. This brief report describes the PR GME Coordinators and Administrators Facebook group, a social media-based initiative providing an accessible, low-cost, and scalable platform to address this gap.</p>
+      </div>
+      <div class="art-body">
+        <div>
+          <h4>Background</h4>
+          <p>GME coordinators serve as the link between trainees, faculty, and institutional leadership. In Puerto Rico, no centralized platform existed for coordinator communication or professional development, contributing to variability in administrative practices and isolated professional growth.</p>
+          <h4>Objectives</h4>
+          <ul>
+            <li>Facilitate peer-to-peer discussions.</li>
+            <li>Share educational resources and best practices.</li>
+            <li>Promote professional development opportunities and events.</li>
+            <li>Encourage collaboration across institutions.</li>
+          </ul>
+          <h4>Methods</h4>
+          <p>A Facebook group was independently created and administered. Platform selected for accessibility, user familiarity, and real-time communication capability. This shows that individual leadership can advance innovation in GME administration.</p>
+          <h4>Results</h4>
+          <ul>
+            <li>Over 25 members from multiple Puerto Rico institutions within three months.</li>
+            <li>Active peer discussions and resource sharing across the group.</li>
+            <li>Professional development events promoted to the membership.</li>
+          </ul>
+          <h4>Conclusion</h4>
+          <p>Social media platforms can support meaningful professional engagement at minimal cost. This model is adaptable to other geographically or resource-limited settings. Future work includes workshops, webinars, and local conferences.</p>
+        </div>
+        <div>
+          <h4>Why This Model Matters</h4>
+          <p>Professional isolation drives burnout and turnover in GME administration. The PR GME Coordinators group addresses this at zero cost through a platform any coordinator team can replicate. It is both a regional solution and a scalable model for underserved GME communities worldwide.</p>
+          <h4>Next Steps</h4>
+          <ul>
+            <li>Develop structured workshops and webinars for Puerto Rico GME coordinators.</li>
+            <li>Plan a local conference to advance professional development.</li>
+            <li>Incorporate structured evaluation with participant feedback and engagement metrics.</li>
+            <li>Explore expansion to other Spanish-speaking or geographically dispersed GME communities.</li>
+          </ul>
+          <h4>Scalability</h4>
+          <p>Key replicable elements: zero startup cost, familiar platform, no institutional approval required, mobile-accessible, self-sustaining once engagement is established.</p>
+        </div>
+      </div>
+      <div class="art-foot">
+        <a class="btn" href="a4/">Read full article <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="a4/pdf/FULGME_Vol_3_A4_August_2026.pdf" download="FULGME_Vol_3_A4_August_2026.pdf">Article PDF</a>
+      </div>
+    </article>
+
+    <!-- A5 -->
+    <article class="card" id="a5" aria-labelledby="a5-title">
+      <div class="art-head">
+        <p class="art-top"><span class="kicker special">New Board Member &middot; Special Section</span><span class="kicker">Perspective</span><span class="artid">A5</span></p>
+        <h3 id="a5-title">Perspectives: Look How Far We Have Come, a Lookback on the Evolution of the GME Coordinator Role</h3>
+        <p class="byline">Crys S. Curkendoll-Draconi, PMP, AA</p>
+        <p class="affil">Program Manager, ONMM Residency and Osteopathic Recognition &nbsp;&middot;&nbsp; Cleveland Clinic South Pointe Hospital</p>
+        <p class="doi">DOI <code>10.70785/YCCD4272</code>
+          <button class="copy" type="button" data-cite="Curkendoll-Draconi CS. Perspectives: Look How Far We Have Come, a Lookback on the Evolution of the GME Coordinator Role. FULGME. 2026;(3):A5. DOI: 10.70785/YCCD4272">Copy citation</button>
+        </p>
+      </div>
+      <div class="abstract">
+        <h4>Abstract</h4>
+        <p>This perspective traces the evolution of the GME coordinator role from the pre-competency era through the ACGME Outcome Project (2001), the Milestones and Next Accreditation System (2013), and Milestones 2.0 (2018). Drawing on personal experience in GME since 2008, the author documents the grassroots Coordinator Description Task Force and its lasting impact on ACGME Common Program Requirements.</p>
+      </div>
+      <div class="art-body">
+        <div>
+          <h4>Pre-Competency Era</h4>
+          <p>Before 2001, coordinator roles were primarily administrative: scheduling, communication, and event planning. A strong coordinator was an asset, not a requirement. Administrators often remained in roles for decades.</p>
+          <h4>Core Competencies (2001)</h4>
+          <p>The ACGME Outcome Project established six core competencies, increasing coordinator responsibility for oversight and documentation. Coordinators needed greater independence but received little formal orientation. Frustration built as workloads grew without recognition.</p>
+          <h4>Milestones and NAS (2013)</h4>
+          <p>Milestones and the Next Accreditation System launched simultaneously. Annual cycles replaced periodic site visits. ADS replaced the PIF. The 10-year Self Study was established. Coordinators took ownership of data entry and continuous accreditation with no formal recognition of the expanded workload.</p>
+          <h4>Milestones 2.0 (2018)</h4>
+          <p>Writing groups broadened to include program directors, faculty, trainees, and coordinators. Implementation required years of adjustment. Coordinators took on deeper roles in assessment than at any prior point.</p>
+        </div>
+        <div>
+          <h4>The Coordinator Description Task Force (CDTF)</h4>
+          <p>The CDTF was a grassroots effort run entirely by GME coordinators with no sponsorship. Its goal: petition the ACGME to include coordinator language in the Common Program Requirements. The task force collected data, documented responsibilities, proposed new language, and gathered a community-wide petition. Language was added to the CPRs, including FTE guidelines by program size. Special recognition to Lisa Schritz, C-TAGME, for her instrumental role.</p>
+          <h4>Where the Profession Stands Today</h4>
+          <ul>
+            <li>Formal recognition of the coordinator role within ACGME program requirements.</li>
+            <li>Expanded training, mentorship, and professional development pathways.</li>
+            <li>Stronger professional community driving career trajectory and recognition.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="art-foot">
+        <a class="btn" href="a5/">Read full article <span aria-hidden="true">&rsaquo;</span></a>
+        <a class="btn ghost" href="a5/pdf/FULGME_Vol_3_A5_August_2026.pdf" download="FULGME_Vol_3_A5_August_2026.pdf">Article PDF</a>
+      </div>
+    </article>
+
+    <!-- Resources -->
+    <section class="card block" id="resources" aria-labelledby="res-h">
+      <h2 class="sec" id="res-h">GME Professional Resources</h2>
+      <div class="res">
+        <div>
+          <h4><a href="https://www.acgme.org/globalassets/pdfs/coordinators/program-coordinator-handbook.pdf">ACGME Program Coordinator Handbook</a></h4>
+          <p>A guide for both new and experienced program coordinators seeking to expand their knowledge of specific topics, tasks, and responsibilities associated with their role. <span class="ftype">PDF</span></p>
+
+          <h4><a href="https://dl.acgme.org/">LEARN at ACGME: Coordinator Resources and Learning Path</a></h4>
+          <p>Free online learning modules for program coordinators, including the Coordinator Handbook Companion (24-module learning path), Coordinator Timelines, and AWARE well-being tools. Free account required.</p>
+
+          <h4><a href="https://writingcenter.gmu.edu/writing-resources/imrad/abstracts-in-scientific-research-papers-imrad">How to Write an Abstract</a></h4>
+          <p>Steps and examples for writing an abstract for a thesis, dissertation, or research paper using the IMRaD structure. George Mason University Writing Center.</p>
+
+          <h4><a href="https://jgme.kglmeridian.com/">Journal of Graduate Medical Education (JGME)</a></h4>
+          <p>The peer-reviewed, open-access journal of the ACGME. Publishes original research, educational innovations, perspectives, brief reports, and commentaries relevant to residency and fellowship training. Free to all.</p>
+        </div>
+        <div class="panel">
+          <h4>Upcoming GME Conferences</h4>
+          <ul class="conf">
+            <li><strong>2027 ACGME Annual Educational Conference</strong><span>February 25&ndash;27, 2027<br>Henry B. Gonzalez Convention Center, San Antonio, TX</span></li>
+            <li><strong>2027 AHME Institute</strong><span>May 12&ndash;14, 2027<br>Sheraton New Orleans, New Orleans, LA</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="submit" aria-labelledby="cta-h">
+      <h2 id="cta-h">Share Your Voice</h2>
+      <p>Help shape the future of GME by contributing your perspective and expertise. Whether you are implementing innovative solutions, celebrating program successes, conducting research, or addressing current challenges, your insights contribute to our community.</p>
+      <p>Your contributions can:</p>
+      <ul>
+        <li>Inspire innovative approaches in medical education</li>
+        <li>Share best practices and lessons learned</li>
+        <li>Advance GME through collaborative dialogue</li>
+        <li>Address emerging challenges in the field</li>
+      </ul>
+      <a class="btn" href="https://www.fulgme.org">Visit FULGME <span aria-hidden="true">&rsaquo;</span></a>
+    </section>
+
+    <div class="cite-box">
+      <h2>Cite this issue as</h2>
+      <p>FULGME. 2026;(3). DOI: 10.70785/JJXN8215</p>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="side" aria-label="Issue contents and information">
+    <nav class="card toc" id="contents" aria-labelledby="toc-h">
+      <h2 id="toc-h">Inside this Issue</h2>
+      <ol>
+        <li><a href="#a1"><span class="id">A1</span>Program Coordinator Well-Being Initiative: A Year in Review</a></li>
+        <li><a href="#a2"><span class="id">A2</span>Centering the Role of the GME Director in Institutional Success</a></li>
+        <li><a href="#a3"><span class="id">A3</span>GME and the United States Military: Structure, Integration, and Comparative Perspectives</a></li>
+        <li><a href="#a4"><span class="id">A4</span>Building a Collaborative Network for GME Coordinators in Puerto Rico</a></li>
+        <li><a href="#a5"><span class="id">A5</span>[Special] New Board Member Perspective: Look How Far We Have Come</a></li>
+        <li><a href="#resources"><span class="id">&#43;</span>Additional Resources</a></li>
+      </ol>
+    </nav>
+
+    <section class="card" aria-labelledby="info-h">
+      <h2 id="info-h">Issue Information</h2>
+      <dl class="meta-list">
+        <div><dt>Publisher</dt><dd>Forum for United Leaders in Graduate Medical Education</dd></div>
+        <div><dt>ISSN</dt><dd>3065-582x</dd></div>
+        <div><dt>Issue</dt><dd>3</dd></div>
+        <div><dt>Published</dt><dd>August 2026</dd></div>
+        <div><dt>Journal DOI</dt><dd>10.70785/IHSN6820</dd></div>
+        <div><dt>Issue DOI</dt><dd>10.70785/JJXN8215</dd></div>
+        <div><dt>Access</dt><dd>Peer reviewed, open access</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:info@fulgme.org">info@fulgme.org</a><br><a href="https://www.fulgme.org">fulgme.org</a></dd></div>
+      </dl>
+    </section>
+  </aside>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h2>Article DOIs in this issue</h2>
+        <p>A1 &nbsp;10.70785/EKFN3359</p>
+        <p>A2 &nbsp;10.70785/LLJT5147</p>
+        <p>A3 &nbsp;10.70785/XZGA3877</p>
+        <p>A4 &nbsp;10.70785/ZMUQ2206</p>
+        <p>A5 &nbsp;10.70785/YCCD4272</p>
+      </div>
+      <div>
+        <h2>Journal</h2>
+        <p><a href="https://www.fulgme.org">fulgme.org</a></p>
+        <p><a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
+        <p><a href="pdf/FULGME-Journal-Issue-3-August-2026.pdf" download>Download Issue 3 (PDF)</a></p>
+      </div>
+      <div>
+        <h2>Acknowledgment</h2>
+        <p>We extend our gratitude to all contributors to this issue. Your insights and expertise greatly enrich our community.</p>
+      </div>
+    </div>
+    <p class="legal">
+      &copy; The author(s). Published by the Forum for United Leaders in Graduate Medical Education under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> &nbsp;&bull;&nbsp;
+      Issue 3, August 2026 &nbsp;&bull;&nbsp; ISSN: 3065-582x &nbsp;&bull;&nbsp;
+      Journal DOI: 10.70785/IHSN6820 &nbsp;&bull;&nbsp; Issue DOI: 10.70785/JJXN8215
+    </p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PublicationIssue",
+  "issueNumber": "3",
+  "datePublished": "2026-08",
+  "name": "FULGME Journal, Issue 3, August 2026",
+  "url": "https://journal.fulgme.org/issue-3/",
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "FULGME: Forum for United Leaders in Graduate Medical Education",
+    "issn": "3065-582x",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Forum for United Leaders in Graduate Medical Education",
+      "url": "https://www.fulgme.org",
+      "email": "info@fulgme.org"
+    }
+  },
+  "hasPart": [
+    {"@type":"ScholarlyArticle","name":"Program Coordinator Well-Being Initiative: A Year in Review","author":{"@type":"Person","name":"Brant Weindorf"},"identifier":"https://doi.org/10.70785/EKFN3359","url":"https://www.fulgme.org/post/fulgme-gme-journal-issue-3-article-a1-brief-report"},
+    {"@type":"ScholarlyArticle","name":"Centering the Role of the GME Director in Institutional Success","author":[{"@type":"Person","name":"Lisa Payne"},{"@type":"Person","name":"Donna Guidroz"}],"identifier":"https://doi.org/10.70785/LLJT5147","url":"https://www.fulgme.org/post/fulgme-gme-journal-issue-3-article-a2-perspective"},
+    {"@type":"ScholarlyArticle","name":"Graduate Medical Education and the United States Military: Structure, Integration, and Comparative Perspectives","author":{"@type":"Person","name":"Theraesa Jones-Cleveland"},"identifier":"https://doi.org/10.70785/XZGA3877","url":"https://www.fulgme.org/post/fulgme-gme-journal-issue-3-article-a3-perspective"},
+    {"@type":"ScholarlyArticle","name":"Building a Collaborative Network for GME Coordinators in Puerto Rico: A Social Media-Based Approach","author":{"@type":"Person","name":"Cristina Morales"},"identifier":"https://doi.org/10.70785/ZMUQ2206","url":"https://www.fulgme.org/post/fulgme-gme-journal-issue-3-article-a4-brief-report"},
+    {"@type":"ScholarlyArticle","name":"Perspectives: Look How Far We Have Come, a Lookback on the Evolution of the GME Coordinator Role","author":{"@type":"Person","name":"Crys S. Curkendoll-Draconi"},"identifier":"https://doi.org/10.70785/YCCD4272","url":"https://www.fulgme.org/post/fulgme-gme-journal-issue-3-article-a5-perspective"}
+  ]
+}
+</script>
+
+<script>
+// Copy-citation buttons. In-memory only, no storage APIs.
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = btn.getAttribute('data-cite');
+    var original = btn.textContent;
+    function done(msg) {
+      btn.textContent = msg;
+      setTimeout(function () { btn.textContent = original; }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done('Copied'); }, function () { done('Press Ctrl+C'); });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', '');
+      ta.style.position = 'absolute'; ta.style.left = '-9999px';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done('Copied'); } catch (e) { done('Press Ctrl+C'); }
+      document.body.removeChild(ta);
+    }
+  });
+});
+</script>
+</body>
+</html>

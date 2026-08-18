@@ -250,6 +250,7 @@ ARTICLES = [
 {
  "slug": "a5", "id": "A5", "type": "Perspective",
  "special": "New Board Member &middot; Special Section",
+ "peer_reviewed": False,
  "title": "Perspectives: Look How Far We Have Come, a Lookback on the Evolution of the GME Coordinator Role",
  "authors": [{"name": "Crys S. Curkendoll-Draconi, PMP, AA", "aff": 1}],
  "affiliations": ["Cleveland Clinic South Pointe Hospital"],
@@ -390,6 +391,17 @@ def page(a, prev_a, next_a):
     doi_meta = (f'<meta name="citation_doi" content="{a["doi"]}">\n' if a.get("doi") else "")
     doi_info = (f'<div><dt>Article DOI</dt><dd>{a["doi"]}</dd></div>' if a.get("doi")
                 else '<div><dt>Article DOI</dt><dd>Pending correction, see note above</dd></div>')
+    reviewed = a.get("peer_reviewed", True)
+    access_short = ("Peer reviewed, open access" if reviewed
+                    else "Invited board contribution, not peer reviewed")
+    access_long = ("Peer reviewed, open access, free to read" if reviewed
+                   else "Invited board contribution, not peer reviewed, open access, free to read")
+    ed_notice = ("" if reviewed else
+        '<div class="notice"><p><strong>Invited board contribution.</strong> This article is part of the '
+        'journal&rsquo;s annual invited special topic section. It was invited by the editorial board '
+        'rather than submitted through the open call, and it is editorial content rather than '
+        'peer-reviewed research. The author took no part in the decision to publish it. See the '
+        '<a href="../../policies/#peer-review">peer review policy</a>.</p></div>\n')
     doi_notice = (f'<div class="notice"><p><strong>Note on this article&rsquo;s DOI.</strong> {a["doi_note"]}</p></div>\n'
                   if a.get("doi_note") else "")
     issue_note = (f'<div class="notice"><p><strong>About this issue.</strong> {ISSUE["note"]}</p></div>\n'
@@ -417,6 +429,10 @@ def page(a, prev_a, next_a):
         **({"identifier": f'https://doi.org/{a["doi"]}',
             "sameAs": f'https://doi.org/{a["doi"]}'} if a.get("doi") else {}),
         "url": url, "inLanguage": "en", "isAccessibleForFree": True,
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "copyrightYear": int(ISSUE["pub_iso"][:4]),
+        "copyrightHolder": [{"@type": "Person", "name": html.unescape(x["name"])}
+                            for x in a["authors"]],
         "pagination": a["id"],
         "isPartOf": {
             "@type": "PublicationIssue", "issueNumber": ISSUE["num"],
@@ -470,7 +486,9 @@ def page(a, prev_a, next_a):
 <meta name="DC.date" content="{ISSUE["pub_iso"]}">
 <meta name="DC.type" content="{a["type"]}">
 <meta name="DC.identifier" content="{a["doi"] or ISSUE["issue_doi"]}">
-<meta name="DC.rights" content="Open access. Copyright 2026 Forum for United Leaders in Graduate Medical Education.">
+<meta name="DC.rights" content="Open access. Copyright is retained by the author(s). Published under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International licence (CC BY-NC-ND 4.0).">
+<meta name="DC.rights.uri" content="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
 
 <!-- Social sharing -->
 <meta property="og:type" content="article">
@@ -512,7 +530,7 @@ def page(a, prev_a, next_a):
       <div><dt>Article type</dt><dd>{a["type"]}</dd></div>
       <div><dt>Published</dt><dd>{ISSUE["published"]}</dd></div>
       {doi_fact}
-      <div><dt>Access</dt><dd>Peer reviewed, open access</dd></div>
+      <div><dt>Access</dt><dd>{access_short}</dd></div>
     </dl>
   </div>
 
@@ -526,7 +544,7 @@ def page(a, prev_a, next_a):
   </div>
 
   <div class="abody">
-{issue_note}{doi_notice}{render_body(a["body"])}
+{ed_notice}{issue_note}{doi_notice}{render_body(a["body"])}
 {refs}{ack}
     <p class="coi"><strong>Conflict of interest.</strong> {COI}</p>
 
@@ -547,10 +565,19 @@ def page(a, prev_a, next_a):
         {doi_info}
         <div><dt>Issue DOI</dt><dd>{ISSUE["issue_doi"]}</dd></div>
         <div><dt>Journal DOI</dt><dd>{ISSUE["journal_doi"]}</dd></div>
-        <div><dt>Access</dt><dd>Peer reviewed, open access, free to read</dd></div>
+        <div><dt>Access</dt><dd>{access_long}</dd></div>
+        <div><dt>Copyright</dt><dd>Retained by the author(s)</dd></div>
+        <div><dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a></dd></div>
         <div><dt>Contact</dt><dd><a href="mailto:info@fulgme.org">info@fulgme.org</a></dd></div>
       </dl>
     </section>
+
+    <p class="licence"><strong>Copyright and licence.</strong> &copy; The author(s). This article is
+    published open access under a
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+    International licence (CC BY-NC-ND 4.0)</a>. You are free to copy and redistribute it in any medium
+    or format, with attribution to the author(s) and FULGME, provided you do not use it commercially and
+    do not distribute altered versions.</p>
   </div>
 </article>
 
@@ -564,7 +591,8 @@ def page(a, prev_a, next_a):
   <div class="wrap">
     <p><a href="../../">FULGME Journal</a> &nbsp;&middot;&nbsp; <a href="https://www.fulgme.org">fulgme.org</a> &nbsp;&middot;&nbsp; <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
     <p class="legal">
-      Copyright &copy; 2026 Forum for United Leaders in Graduate Medical Education &nbsp;&bull;&nbsp;
+      &copy; The author(s). Published by FULGME under
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> &nbsp;&bull;&nbsp;
       Issue {ISSUE["num"]}, {ISSUE["published"]} &nbsp;&bull;&nbsp; ISSN: {ISSUE["issn"]} &nbsp;&bull;&nbsp;
       Journal DOI: {ISSUE["journal_doi"]} &nbsp;&bull;&nbsp; Issue DOI: {ISSUE["issue_doi"]}
     </p>
