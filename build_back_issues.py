@@ -139,7 +139,7 @@ def issue_page(ISSUE, ARTICLES):
   <div class="iwrap">
     <p class="eyebrow">{ISSUE["published"]} &nbsp;&middot;&nbsp; {ISSUE["label"]}</p>
     <h1>FULGME<span class="tm">TM</span> Journal</h1>
-    <p>Forum for United Leaders in Graduate Medical Education. A peer-reviewed, open-access journal advancing scholarship, innovation, and professional development in graduate medical education administration.</p>
+    <p>Forum for United Leaders in Graduate Medical Education. A peer-reviewed, open-access journal advancing research, authorship, scholarship, innovation, and professional development in graduate medical education leaders.</p>
   </div>
 </header>
 
