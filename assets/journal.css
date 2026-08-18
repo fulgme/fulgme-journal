@@ -132,6 +132,13 @@ table.data tbody th{font-weight:600;color:var(--ink);background:#F1F5F8}
 .coi{margin:1.4rem 0 0;font-size:.88rem;color:var(--slate)}
 .coi strong{color:var(--ink)}
 
+/* Copyright and licence statement on article pages */
+.licence{margin:1.5rem 0 0;padding:.95rem 1.15rem;background:#F8FAFC;border:1px solid var(--rule);
+  border-left:4px solid var(--gold-dark);border-radius:0 6px 6px 0;font-size:.88rem;color:var(--slate);
+  max-width:none;line-height:1.55}
+.licence strong{color:var(--ink)}
+.licence a{color:var(--blue)}
+
 /* Notices and boxes */
 .notice{background:#F8F6EF;border-left:4px solid var(--gold);border-radius:0 6px 6px 0;padding:1rem 1.2rem;margin:0 0 1.75rem;font-size:.94rem}
 .notice p{margin:0;max-width:none}
