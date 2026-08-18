@@ -183,3 +183,13 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:1.1rem;paddi
   .jbar .brand,.jbar .meta,footer p,footer .legal,footer a{color:#000!important}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:.85em;color:#555}
 }
+
+/* Logo */
+.jbar .wrap{align-items:center}
+.jbar .brand{display:inline-flex;align-items:center;gap:.6rem}
+.blogo{width:40px;height:40px;flex:none;object-fit:contain;background:#fff;
+  border-radius:8px;padding:4px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
+.mastlogo{display:block;width:104px;height:auto;background:#fff;border-radius:12px;
+  padding:10px;margin:0 0 1.15rem;box-shadow:0 2px 8px rgba(0,0,0,.22)}
+@media (max-width:560px){.blogo{width:34px;height:34px}.mastlogo{width:84px}}
+@media print{.blogo,.mastlogo{box-shadow:none;border:1px solid #999}}
