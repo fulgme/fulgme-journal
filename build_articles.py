@@ -87,8 +87,8 @@ ARTICLES = [
    "date": "18 August 2026",
    "text": ("Melody Alijani, MS, University of Nevada, Reno School of Medicine, was added as the third "
             "author of this article. The author list, the affiliations, and the recommended citation on "
-            "this page have been updated. The downloadable PDF has not been reissued and still lists two "
-            "authors."),
+            "this page have been updated. The article PDF and the full issue PDF have been reissued with the "
+            "corrected author list. No other part of the article has changed."),
  },
  "doi": "10.70785/LLJT5147",
  "pages": "2-5",
