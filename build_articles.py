@@ -78,9 +78,18 @@ ARTICLES = [
 {
  "slug": "a2", "id": "A2", "type": "Perspective", "special": None,
  "title": "Centering the Role of the GME Director in Institutional Success",
- "authors": [{"name": "Lisa Payne", "aff": 1}, {"name": "Donna Guidroz", "aff": 2}],
- "affiliations": ["UCLA", "Ochsner Health"],
- "cite_authors": "Payne L, Guidroz D",
+ "authors": [{"name": "Lisa Payne", "aff": 1}, {"name": "Donna Guidroz", "aff": 2},
+             {"name": "Melody Alijani, MS", "aff": 3}],
+ "affiliations": ["UCLA", "Ochsner Health",
+                  "University of Nevada, Reno School of Medicine"],
+ "cite_authors": "Payne L, Guidroz D, Alijani M",
+ "correction": {
+   "date": "18 August 2026",
+   "text": ("Melody Alijani, MS, University of Nevada, Reno School of Medicine, was added as the third "
+            "author of this article. The author list, the affiliations, and the recommended citation on "
+            "this page have been updated. The downloadable PDF has not been reissued and still lists two "
+            "authors."),
+ },
  "doi": "10.70785/LLJT5147",
  "pages": "2-5",
  "pdf": "FULGME_Vol_3_A2_August_2026.pdf",
@@ -396,6 +405,8 @@ def page(a, prev_a, next_a):
                     else "Invited board contribution, not peer reviewed")
     access_long = ("Peer reviewed, open access, free to read" if reviewed
                    else "Invited board contribution, not peer reviewed, open access, free to read")
+    corr_notice = (f'<div class="notice correction"><p><strong>Correction, {a["correction"]["date"]}.</strong> '
+                   f'{a["correction"]["text"]}</p></div>\n' if a.get("correction") else "")
     ed_notice = ("" if reviewed else
         '<div class="notice"><p><strong>Invited board contribution.</strong> This article is part of the '
         'journal&rsquo;s annual invited special topic section. It was invited by the editorial board '
@@ -552,7 +563,7 @@ def page(a, prev_a, next_a):
   </div>
 
   <div class="abody">
-{ed_notice}{issue_note}{doi_notice}{render_body(a["body"])}
+{corr_notice}{ed_notice}{issue_note}{doi_notice}{render_body(a["body"])}
 {refs}{ack}
     <p class="coi"><strong>Conflict of interest.</strong> {COI}</p>
 

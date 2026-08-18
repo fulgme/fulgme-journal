@@ -193,3 +193,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:1.1rem;paddi
   padding:10px;margin:0 0 1.15rem;box-shadow:0 2px 8px rgba(0,0,0,.22)}
 @media (max-width:560px){.blogo{width:34px;height:34px}.mastlogo{width:84px}}
 @media print{.blogo,.mastlogo{box-shadow:none;border:1px solid #999}}
+
+/* Correction notice */
+.notice.correction{background:#FDF3F3;border-left-color:#B4463C}
+.notice.correction strong{color:#8C2F27}
