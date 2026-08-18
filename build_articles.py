@@ -479,6 +479,14 @@ def page(a, prev_a, next_a):
 <meta name="citation_fulltext_html_url" content="{url}">
 <meta name="citation_language" content="en">
 
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta property="og:image" content="https://journal.fulgme.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://journal.fulgme.org/assets/og-image.png">
 <!-- Dublin Core -->
 <meta name="DC.title" content="{html.escape(plain_title)}">
 <meta name="DC.creator" content="{html.escape(', '.join(html.unescape(x['name']) for x in a['authors']))}">
@@ -503,7 +511,7 @@ def page(a, prev_a, next_a):
 
 <div class="jbar">
   <div class="wrap">
-    <a class="brand" href="../../">FULGME<span class="tm">TM</span> Journal</a>
+    <a class="brand" href="../../"><img class="blogo" src="../../assets/fulgme-mark.png" alt="" width="91" height="94" decoding="async"><span>FULGME<span class="tm">TM</span> Journal</span></a>
     <span class="meta">{ISSUE["running_head"]} &middot; {ISSUE["published"]}</span>
   </div>
 </div>

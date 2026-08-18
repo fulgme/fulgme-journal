@@ -70,13 +70,27 @@ h2.sec{font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.85rem);color:var(--
 footer{background:var(--blue);color:#C9D8E3;margin-top:2.5rem;padding:2rem 0 2.25rem;border-top:5px solid var(--gold);font-size:.86rem}
 footer a{color:var(--gold-muted)}
 footer p{margin:0 0 .4rem}
+
+.mastlogo{display:block;width:104px;height:auto;background:#fff;border-radius:12px;
+  padding:10px;margin:0 0 1.15rem;box-shadow:0 2px 8px rgba(0,0,0,.22)}
+@media (max-width:560px){.mastlogo{width:84px}}
+@media print{.mastlogo{box-shadow:none;border:1px solid #999}}
 </style>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:image" content="https://journal.fulgme.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://journal.fulgme.org/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="mast">
   <div class="wrap">
+    <img class="mastlogo" src="assets/fulgme-logo.png" alt="FULGME" width="143" height="123">
     <h1>FULGME<span class="tm">TM</span> Journal</h1>
     <p>Forum for United Leaders in Graduate Medical Education. A peer-reviewed, open-access journal advancing scholarship, innovation, and professional development in graduate medical education administration.</p>
     <ul class="badges">

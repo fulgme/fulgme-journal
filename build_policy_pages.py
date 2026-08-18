@@ -41,6 +41,14 @@ def page(slug, title, desc, body):
 <link rel="canonical" href="{SITE}/{slug}/">
 <link rel="stylesheet" href="../assets/journal.css">
 <link rel="license" href="{LIC}">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:image" content="https://journal.fulgme.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://journal.fulgme.org/assets/og-image.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FULGME Journal">
 <meta property="og:title" content="{title} | FULGME Journal">
@@ -88,7 +96,7 @@ def page(slug, title, desc, body):
 
 <div class="jbar">
   <div class="wrap pwrap">
-    <a class="brand" href="../">FULGME<span class="tm">TM</span> Journal</a>
+    <a class="brand" href="../"><img class="blogo" src="../assets/fulgme-mark.png" alt="" width="91" height="94" decoding="async"><span>FULGME<span class="tm">TM</span> Journal</span></a>
     <span class="meta">ISSN 3065-582x</span>
   </div>
 </div>
