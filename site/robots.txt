@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://journal.fulgme.org/sitemap.xml
