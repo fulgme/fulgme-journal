@@ -19,7 +19,7 @@ import pathlib
 SITE = "https://journal.fulgme.org"
 HERE = pathlib.Path(__file__).resolve().parent
 LIC = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-REVIEWED = "18 August 2026"
+REVIEWED = "19 August 2026"
 FOURWAVES = "https://event.fourwaves.com/624ae48b-a95e-4903-892e-851e6c6c1023"
 
 NAV = [("../", "Issues"), ("../about/", "About"), ("../editorial-board/", "Editorial Board"),
@@ -365,19 +365,31 @@ AUTHORS = f"""
     <table class="facts">
       <tr><th>Research</th><td>Original studies with a stated method and results.</td></tr>
       <tr><th>Brief Report</th><td>Shorter empirical work, typically a single-site initiative with outcome data.</td></tr>
-      <tr><th>Innovation</th><td>A new structure, tool, or program, with enough detail for others to replicate it.</td></tr>
+      <tr><th>Innovation</th><td>A new approach or strategy in graduate medical education
+        administration that has been implemented and assessed, with enough detail for others to replicate
+        it. Include what it took to run: cost, time, materials, training, technology, and how participants
+        received it.</td></tr>
       <tr><th>Perspective</th><td>Informed argument or professional reflection, grounded in experience.</td></tr>
       <tr><th>Process Improvement</th><td>A described change to a workflow or system, with what was learned.</td></tr>
       <tr><th>Best Practices</th><td>Consolidated practical guidance drawn from experience.</td></tr>
-      <tr><th>Review</th><td>A synthesis of existing literature or practice.</td></tr>
+      <tr><th>Review</th><td>A synthesis of existing literature or practice on a topic relevant to
+        graduate medical education professionals.</td></tr>
+      <tr><th>Personal Essay</th><td>A first-person account of professional experience in graduate
+        medical education, written so that others in the role can take something from it.</td></tr>
+      <tr><th>Letter to the Editor</th><td>A response to an article published in FULGME, or a short
+        comment on a question facing graduate medical education administration.</td></tr>
     </table>
 
     <h2>What to include</h2>
     <ul>
+      <li>A cover letter, one or two paragraphs, introducing the work</li>
       <li>Title</li>
-      <li>Every author&rsquo;s full name, credentials, and institutional affiliation</li>
-      <li>An abstract. Research and brief reports should use a structured abstract with Background,
-          Objective, Methods, Results, and Conclusions.</li>
+      <li>Every author&rsquo;s full name, credentials, institutional affiliation, and role</li>
+      <li>The corresponding author&rsquo;s name and email, for all correspondence through review and
+          publication</li>
+      <li>A structured abstract for research, brief reports, innovations, and reviews, using Background,
+          Objective, Methods, Results, and Conclusions. Perspectives, personal essays, and letters to the
+          editor do not require one.</li>
       <li>The body of the article, with clear section headings, up to 2,000 words</li>
       <li><strong>A reference list for every factual or quantitative claim.</strong> If you state a
           percentage, a count, or a finding from a survey or dataset, cite the source.</li>
@@ -388,6 +400,46 @@ AUTHORS = f"""
     </ul>
     <p>The requirement to cite quantitative claims is not a formality. It is what allows another
     coordinator to check your numbers, build on your work, and cite you with confidence.</p>
+
+    <h2>Authorship</h2>
+    <p>List as an author anyone who took an active part in the research, the writing, or the editing of
+    the manuscript. Anyone who contributed in another way belongs in the acknowledgements. No one who
+    helped is left out of both.</p>
+    <p>Every listed author is accountable for the content and has approved the version submitted.</p>
+
+    <h2>References</h2>
+    <p>Follow the <cite>AMA Manual of Style</cite>.</p>
+    <ul>
+      <li>Number references consecutively in the order they first appear in the text, tables, or legends</li>
+      <li>Abbreviate journal names using the MEDLINE format</li>
+      <li>List up to six authors, then <i>et al</i></li>
+      <li>Cite references in the text with superscript numerals</li>
+      <li>Use superscript letters for footnotes on tables and figures</li>
+    </ul>
+
+    <h2>Preparing your manuscript</h2>
+    <p>Guidance on what belongs in each section. Useful if this is your first submission, and safe to skip
+    if it is not.</p>
+    <details class="guide">
+      <summary>Section-by-section guidance</summary>
+      <h3>Introduction</h3>
+      <p>State why the work matters. Summarise what is already known, identify the gap your work
+      addresses, and end with a clear statement of your objective.</p>
+      <h3>Methods</h3>
+      <p>Justify the approach or framework you chose. Describe the setting, the participants, the
+      intervention, the outcome measures, and how you analysed the data. Give enough detail that another
+      institution could repeat what you did.</p>
+      <h3>Results</h3>
+      <p>Report what happened, objectively. Include participant demographics, whether the work proved
+      feasible, response rates, and the numbers behind any percentage. Report findings that went against
+      you as well as those that went your way.</p>
+      <h3>Discussion</h3>
+      <p>Summarise the significant findings and set them in context. Address how far the results
+      generalise beyond your setting, and anything internal to the study that could have influenced them.
+      Consider alternative explanations. Close with what you would recommend to others.</p>
+      <h3>Conclusion</h3>
+      <p>A short summary of the key takeaways. No new material.</p>
+    </details>
 
     <h2>How to submit</h2>
     <p>Submit through the <a href="{FOURWAVES}">FULGME Call for Submissions</a> form. If you have trouble
@@ -426,6 +478,9 @@ AUTHORS = f"""
     <h2>Before you submit, check</h2>
     <ul>
       <li>The article is within the 2,000 word limit</li>
+      <li>A cover letter is attached</li>
+      <li>The corresponding author&rsquo;s name and email are on the title page</li>
+      <li>References follow AMA style</li>
       <li>Every quantitative claim has a citation</li>
       <li>Author names, credentials, and affiliations are exactly as you want them to appear permanently</li>
       <li>Any named individual has given written consent</li>
