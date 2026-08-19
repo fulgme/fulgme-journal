@@ -223,6 +223,10 @@ BOARD = f"""
       <tr><th>Juanita Braxton, PhD, EdS, MBA</th>
           <td>Treasurer | Associate Editor, FULGME
           <br>Executive Director, Imani Consultants</td></tr>
+      <tr><th>Pamela Furneaux, MHA, CRCR</th>
+          <td>Creative Director of Digital Media, FULGME
+          <br>Instructor in Medical Education and Professional Development Coordinator,
+          Mayo Clinic, Jacksonville, Florida</td></tr>
     </table>
 
     <h2>Editorial responsibilities</h2>
