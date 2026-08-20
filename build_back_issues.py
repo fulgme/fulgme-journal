@@ -170,8 +170,8 @@ def issue_page(ISSUE, ARTICLES):
       <h2 id="info-h">Issue Information</h2>
       <dl class="meta-list">
         <div><dt>Publisher</dt><dd>Forum for United Leaders in Graduate Medical Education</dd></div>
-        <div><dt>ISSN (online)</dt><dd>3065-582x</dd></div>
-        <div><dt>ISSN (print)</dt><dd>3065-5811</dd></div>
+        <div><dt>ISSN</dt><dd>3065-582X</dd></div>
+        <div><dt>ISSN-L</dt><dd>3065-582X</dd></div>
         <div><dt>Issue</dt><dd>{ISSUE["num"]}</dd></div>
         <div><dt>Published</dt><dd>{ISSUE["published"]}</dd></div>
         <div><dt>Journal DOI</dt><dd>{ISSUE["journal_doi"]}</dd></div>

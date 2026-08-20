@@ -97,7 +97,7 @@ def page(slug, title, desc, body):
 <div class="jbar">
   <div class="wrap pwrap">
     <a class="brand" href="../"><img class="blogo" src="../assets/fulgme-mark.png" alt="" width="91" height="94" decoding="async"><span>FULGME<span class="tm">TM</span> Journal</span></a>
-    <span class="meta">ISSN 3065-582x</span>
+    <span class="meta">ISSN 3065-582X</span>
   </div>
 </div>
 
@@ -130,7 +130,7 @@ def page(slug, title, desc, body):
        <a href="../policies/">Policies</a> &nbsp;&middot;&nbsp; <a href="../for-authors/">For Authors</a></p>
     <p class="legal">&copy; The author(s). Published by the Forum for United Leaders in Graduate Medical
       Education under <a href="{LIC}" rel="license">CC BY-NC-ND 4.0</a> &nbsp;&bull;&nbsp;
-      ISSN 3065-582x (online), 3065-5811 (print) &nbsp;&bull;&nbsp; Journal DOI 10.70785/IHSN6820 &nbsp;&bull;&nbsp;
+      ISSN 3065-582X &nbsp;&bull;&nbsp; ISSN-L 3065-582X &nbsp;&bull;&nbsp; Journal DOI 10.70785/IHSN6820 &nbsp;&bull;&nbsp;
       <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
   </div>
 </footer>
@@ -171,8 +171,8 @@ ABOUT = f"""
       <tr><th>Contact person</th><td>Barbara Gohre, President and Founder</td></tr>
       <tr><th>Publisher address</th><td>8925 West Port Au Prince Lane<br>Peoria, AZ 85381<br>United States</td></tr>
       <tr><th>Contact email</th><td><a href="mailto:info@fulgme.org">info@fulgme.org</a></td></tr>
-      <tr><th>ISSN (online)</th><td>3065-582x</td></tr>
-      <tr><th>ISSN (print)</th><td>3065-5811</td></tr>
+      <tr><th>ISSN</th><td>3065-582X</td></tr>
+      <tr><th>ISSN-L</th><td>3065-582X</td></tr>
       <tr><th>Journal DOI</th><td>10.70785/IHSN6820</td></tr>
       <tr><th>DOI prefix</th><td>10.70785, registered with Crossref</td></tr>
       <tr><th>First published</th><td>November 2024</td></tr>

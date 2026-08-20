@@ -26,7 +26,7 @@ ISSUE = {
     "num": "3", "label": "Issue 3", "code": "2026:00/03",
     "running_head": "Issue 3",          # FULGME publishes issues, not volumes
     "published": "August 2026", "pub_iso": "2026-08",
-    "issue": "3", "issn": "3065-582x",
+    "issue": "3", "issn": "3065-582X",
     "journal_doi": "10.70785/IHSN6820", "issue_doi": "10.70785/JJXN8215",
     "issue_pdf": "FULGME-Journal-Issue-3-August-2026.pdf",
     "path": "issue-3",
