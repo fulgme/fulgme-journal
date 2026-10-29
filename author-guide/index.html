@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Author Guide | FULGME Journal</title>
+<meta name="description" content="A step-by-step guide for first-time authors preparing a manuscript for the FULGME Journal.">
+<link rel="canonical" href="https://journal.fulgme.org/author-guide/">
+<link rel="stylesheet" href="../assets/journal.css">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:image" content="https://journal.fulgme.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://journal.fulgme.org/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FULGME Journal">
+<meta property="og:title" content="Author Guide | FULGME Journal">
+<meta property="og:url" content="https://journal.fulgme.org/author-guide/">
+<style>
+  .pwrap{max-width:820px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+  .pnav{background:#fff;border-bottom:1px solid var(--rule)}
+  .pnav .pwrap{display:flex;flex-wrap:wrap;gap:.2rem}
+  .pnav a{padding:.75rem .85rem;font-size:.9rem;font-weight:600;color:var(--slate);text-decoration:none;border-bottom:3px solid transparent}
+  .pnav a:hover{color:var(--blue);background:#F8FAFC}
+  .pnav a[aria-current]{color:var(--blue);border-bottom-color:var(--gold)}
+  .phead{background:var(--blue);color:#fff;padding:2.25rem 0 1.9rem;border-bottom:5px solid var(--gold)}
+  .phead .eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-muted);margin:0 0 .55rem;font-weight:600}
+  .phead h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);margin:0 0 .4rem;line-height:1.15}
+  .phead p{margin:0;color:#D6E2EC;max-width:58ch}
+  main.pbody{padding:2rem 0 3rem}
+  .cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;
+    padding:.7rem 1.25rem;border-radius:6px;margin:.2rem 0 1.2rem}
+  .cta:hover{background:var(--blue-accent);color:#fff}
+  main.pbody h2{font-family:var(--serif);color:var(--blue);font-size:clamp(1.25rem,3vw,1.55rem);margin:2.2rem 0 .5rem;line-height:1.28}
+  main.pbody h2:first-of-type{margin-top:0}
+  main.pbody h3{font-size:1.02rem;color:var(--blue-accent);margin:1.5rem 0 .35rem}
+  main.pbody p,main.pbody li{max-width:70ch}
+  main.pbody p{margin:0 0 .9rem}
+  main.pbody ul,main.pbody ol{margin:.3rem 0 1.1rem;padding-left:1.3rem}
+  main.pbody li{margin:0 0 .45rem}
+  main.pbody li::marker{color:var(--gold-dark)}
+  /* Author guide */
+  .phead .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.2rem}
+  .phead .actions a{display:inline-block;font-weight:600;text-decoration:none;padding:.65rem 1.15rem;border-radius:6px}
+  .phead .actions .go{background:var(--gold);color:var(--blue)}
+  .phead .actions .go:hover{background:var(--gold-muted)}
+  .phead .actions .alt{color:#fff;border:1px solid rgba(255,255,255,.45)}
+  .phead .actions .alt:hover{background:rgba(255,255,255,.08);color:#fff}
+  .phead .note{margin-top:.9rem;font-size:.88rem;color:#B9CCDB}
+  .rail{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--rule)}
+  .rail .pwrap{display:flex;align-items:center;gap:.9rem;padding-top:.55rem;padding-bottom:.55rem}
+  .rail ol{list-style:none;margin:0;padding:2px;display:flex;gap:.4rem;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none}
+  .rail ol::-webkit-scrollbar{display:none}
+  .rail a{display:flex;align-items:center;justify-content:center;width:2.1rem;height:2.1rem;border-radius:50%;border:2px solid var(--rule);color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem;flex:none}
+  .rail a:hover{border-color:var(--blue-accent)}
+  .rail a.done{background:var(--blue);border-color:var(--blue);color:#fff}
+  .rail-count{font-size:.86rem;color:var(--slate);white-space:nowrap;font-variant-numeric:tabular-nums}
+  main.pbody{padding-top:.5rem}
+  .step{display:grid;grid-template-columns:3.6rem 1fr;gap:.25rem 1.2rem;padding:2.2rem 0;border-bottom:1px solid var(--rule);scroll-margin-top:4rem}
+  .step:last-child{border-bottom:0}
+  .num{font-family:var(--serif);font-size:2.8rem;line-height:1;color:var(--gold-dark);font-weight:700}
+  .step-body{min-width:0;display:grid;gap:.9rem}
+  main.pbody .step h2{margin:0}
+  main.pbody .step h3{margin:.3rem 0 0;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+  main.pbody .step p{margin:0}
+  main.pbody .step ul,main.pbody .step ol{margin:0}
+  ul.plain li{margin:0 0 .35rem}
+  .why{font-size:.92rem;color:var(--slate)}
+  @media (max-width:560px){.step{grid-template-columns:1fr}.num{font-size:2.2rem}}
+  .done-toggle{justify-self:start;display:inline-flex;align-items:center;gap:.6rem;font:600 .92rem var(--sans);padding:.55rem .9rem;border-radius:6px;border:2px solid var(--rule);background:var(--white);color:var(--ink);cursor:pointer}
+  .done-toggle:hover{border-color:var(--blue-accent)}
+  .done-toggle[aria-pressed="true"]{background:#E8F3EA;border-color:#2E7D46;color:#1F5F33}
+  .done-toggle .box{width:1.05rem;height:1.05rem;border-radius:3px;border:2px solid currentColor;display:inline-grid;place-items:center;font-size:.75rem;line-height:1}
+  .choices{display:grid;gap:.5rem}
+  .choice{display:flex;gap:.75rem;align-items:flex-start;padding:.75rem .9rem;border:1px solid var(--rule);border-radius:8px;cursor:pointer;background:var(--white)}
+  .choice:hover{border-color:var(--blue-accent)}
+  .choice input{margin-top:.35rem;accent-color:var(--blue);flex:none}
+  .choice.on{border-color:var(--blue);background:#EEF4F8}
+  .choice:focus-within{outline:3px solid var(--gold);outline-offset:2px}
+  .result{background:#F8F6EF;border-left:4px solid var(--gold);padding:1.1rem 1.25rem;border-radius:0 8px 8px 0;display:grid;gap:.6rem}
+  .result .type{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--blue)}
+  .pill{display:inline-block;font-size:.8rem;font-weight:700;padding:.2rem .65rem;border-radius:99px;letter-spacing:.02em}
+  .pill.req{background:var(--blue);color:#fff}
+  .pill.unst{background:var(--gold-muted);color:var(--ink)}
+  .sections details{border:1px solid var(--rule);border-radius:8px;background:var(--white);margin:0 0 .4rem}
+  .sections summary{cursor:pointer;padding:.7rem 1rem;font-weight:600;color:var(--blue);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+  .sections summary::-webkit-details-marker{display:none}
+  .sections summary::after{content:"+";color:var(--gold-dark);font-size:1.2rem;line-height:1}
+  .sections details[open] summary::after{content:"\2212"}
+  .sections details>p{padding:0 1rem .9rem}
+  .counter,.sorter{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:1rem;display:grid;gap:.6rem}
+  .counter label,.sorter .q{font-weight:600;color:var(--blue)}
+  .counter textarea{width:100%;min-height:7rem;resize:vertical;font:1rem/1.5 var(--sans);padding:.6rem .75rem;border-radius:6px;border:1px solid var(--rule);background:var(--bg);color:var(--ink)}
+  .counter textarea:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+  .meter{height:.6rem;background:var(--rule);border-radius:99px;overflow:hidden}
+  .meter i{display:block;height:100%;width:0;background:var(--blue-accent);transition:width .2s}
+  .meter.over i{background:#B4432F}
+  .count-line{font-variant-numeric:tabular-nums;font-size:.92rem}
+  .sorter .row{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chip{font:600 .92rem var(--sans);padding:.45rem .9rem;border-radius:99px;border:2px solid var(--blue-accent);background:var(--white);color:var(--blue-accent);cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--blue-accent);color:#fff}
+  .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem}
+  .group{border-top:3px solid var(--gold);padding-top:.6rem;display:grid;gap:.4rem;align-content:start}
+  .group ul{padding-left:1.1rem;font-size:.95rem}
+  .group li{margin:0 0 .3rem}
+  .checks{display:grid;gap:.2rem;padding:0;list-style:none}
+  .checks li{margin:0}
+  .checks label{display:flex;gap:.75rem;align-items:flex-start;padding:.55rem .7rem;border-radius:6px;cursor:pointer}
+  .checks label:hover{background:var(--white)}
+  .checks input{width:1.2rem;height:1.2rem;margin-top:.2rem;accent-color:#2E7D46;flex:none}
+  .checks input:checked+span{color:var(--slate);text-decoration:line-through;text-decoration-color:#2E7D46}
+  .ready{font-weight:600;padding:.7rem 1rem;border-radius:6px;background:var(--white);border:1px solid var(--rule)}
+  .ready.go{background:#E8F3EA;border-color:#2E7D46;color:#1F5F33}
+  .timeline{list-style:none;padding:0;counter-reset:t}
+  .timeline li{counter-increment:t;display:grid;grid-template-columns:2.2rem 1fr;gap:.75rem;padding-bottom:1rem;margin:0;position:relative;max-width:none}
+  .timeline li::before{content:counter(t);width:1.85rem;height:1.85rem;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem;z-index:1}
+  .timeline li:not(:last-child)::after{content:"";position:absolute;left:.88rem;top:1.85rem;bottom:0;width:2px;background:var(--rule)}
+  .timeline b{display:block;color:var(--blue)}
+  main.pbody .checks,main.pbody .timeline{padding-left:0}
+  main.pbody .timeline li,main.pbody .checks li{margin:0}
+  main.pbody .timeline li{padding-bottom:1rem}
+  .guide-foot{margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--slate);display:grid;gap:.5rem}
+  .guide-foot p{margin:0}
+  .reset{justify-self:start;font:.86rem var(--sans);background:none;border:none;color:var(--blue-accent);text-decoration:underline;cursor:pointer;padding:0}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="jbar">
+  <div class="wrap pwrap">
+    <a class="brand" href="../"><img class="blogo" src="../assets/fulgme-mark.png" alt="" width="91" height="94" decoding="async"><span>FULGME<span class="tm">TM</span> Journal</span></a>
+    <a class="uplink" href="https://www.fulgme.org">Visit FULGME.org<span aria-hidden="true">&#8599;</span></a>
+    <span class="meta">ISSN 3065-582X</span>
+  </div>
+</div>
+
+<nav class="pnav" aria-label="Journal sections">
+  <div class="pwrap">
+      <a href="../">Issues</a>
+      <a href="../about/">About</a>
+      <a href="../editorial-board/">Editorial Board</a>
+      <a href="../policies/">Policies</a>
+      <a href="../for-authors/" aria-current="page">For Authors</a>
+  </div>
+</nav>
+
+<header class="phead">
+  <div class="pwrap">
+    <p class="eyebrow">FULGME Journal &middot; Author Guide</p>
+    <h1>Your first FULGME submission</h1>
+    <p>Seven steps from idea to submitted manuscript, written for GME professionals preparing their first article. Work through them in order and mark each one done.</p>
+    <div class="actions">
+      <a class="go" href="#step-1">Start with step 1</a>
+      <a class="alt" href="../for-authors/">Full author guidelines</a>
+    </div>
+    <p class="note">Your progress is saved in this browser only. Nothing you enter on this page is sent to FULGME.</p>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Guide steps">
+  <div class="pwrap">
+    <ol id="rail"></ol>
+    <span class="rail-count" id="railCount">0 of 7 done</span>
+  </div>
+</nav>
+
+<main class="pbody" id="main">
+  <div class="pwrap">
+
+<section class="step" id="step-1" data-step="1">
+  <div class="num" aria-hidden="true">1</div>
+  <div class="step-body">
+    <h2>Choose your article type</h2>
+    <p>FULGME publishes the operational and administrative scholarship of GME. If your work makes a program run better, it belongs here. Pick the sentence that sounds most like your work.</p>
+    <div class="choices" id="choices" role="radiogroup" aria-label="Which sentence best describes your work?"></div>
+    <div class="result" id="result" aria-live="polite"></div>
+    <p class="why">Every type has the same 2,000-word limit. The title page, abstract, references, tables, and figure captions do not count toward it.</p>
+    <button class="done-toggle" data-done="1" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-2" data-step="2">
+  <div class="num" aria-hidden="true">2</div>
+  <div class="step-body">
+    <h2>Draft each section</h2>
+    <p>Use clear section headings throughout. The guide below fits research-style articles most closely, so take what applies to your type.</p>
+    <div class="sections">
+      <details open><summary>Introduction</summary><p>State why the work matters. Summarize what is already known, name the gap your work addresses, and end with a clear statement of your objective.</p></details>
+      <details><summary>Methods</summary><p>Justify the approach or framework you chose. Describe the setting, participants, intervention, outcome measures, and how you analyzed the data. Give enough detail that another institution could repeat what you did.</p></details>
+      <details><summary>Results</summary><p>Report what happened, objectively. Include participant demographics, whether the work proved feasible, response rates, and the numbers behind any percentage. Report findings that went against you as well as those that went your way.</p></details>
+      <details><summary>Discussion</summary><p>Summarize the significant findings and put them in context. Address how far the results apply beyond your setting and anything in the study that could have influenced them. Consider other explanations. Close with what you would recommend to others.</p></details>
+      <details><summary>Conclusion</summary><p>A short summary of the key takeaways. No new material.</p></details>
+    </div>
+    <div class="counter">
+      <label for="draft">Check your word count</label>
+      <p class="why">Paste the body of your article only. Leave out the title page, abstract, references, tables, and figure captions. Nothing you paste leaves this page.</p>
+      <textarea id="draft" placeholder="Paste your article body here"></textarea>
+      <div class="meter" id="meter"><i></i></div>
+      <div class="count-line" id="countLine">0 of 2,000 words</div>
+    </div>
+    <button class="done-toggle" data-done="2" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-3" data-step="3">
+  <div class="num" aria-hidden="true">3</div>
+  <div class="step-body">
+    <h2>Settle authorship early</h2>
+    <p>Decide who is an author before you write the title page. Names and affiliations become part of a permanent, citable record, and changing them after publication requires a formal correction notice.</p>
+    <div class="sorter">
+      <p class="q" id="sortQ">Did this person take an active part in the research, the writing, or the editing of the manuscript?</p>
+      <div class="row" role="group" aria-labelledby="sortQ">
+        <button class="chip" data-sort="yes" aria-pressed="false">Yes</button>
+        <button class="chip" data-sort="no" aria-pressed="false">No, they helped another way</button>
+      </div>
+      <p id="sortA" aria-live="polite" class="why">Choose an answer for each person who contributed.</p>
+    </div>
+    <ul class="plain">
+      <li>Every listed author is accountable for the content and has approved the version you submit.</li>
+      <li>No one who helped is left out of both the author list and the acknowledgements.</li>
+      <li>List each author's full name, credentials, institutional affiliation, and role exactly as they want them to appear permanently.</li>
+      <li>Any individual you name in the article needs to give written consent.</li>
+    </ul>
+    <button class="done-toggle" data-done="3" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-4" data-step="4">
+  <div class="num" aria-hidden="true">4</div>
+  <div class="step-body">
+    <h2>Cite every number</h2>
+    <p>Every factual or quantitative claim needs a reference. If you state a percentage, a count, or a finding from a survey or dataset, cite the source. This lets another coordinator check your numbers, build on your work, and cite you with confidence.</p>
+    <h3>AMA style, the short version</h3>
+    <ul class="plain">
+      <li>Number references in the order they first appear in the text, tables, or legends.</li>
+      <li>Cite them in the text with superscript numerals.</li>
+      <li>Abbreviate journal names using the MEDLINE format.</li>
+      <li>List up to six authors, then <i>et al</i>.</li>
+      <li>Use superscript letters for footnotes on tables and figures.</li>
+    </ul>
+    <p class="why">The full rules are in the AMA Manual of Style.</p>
+    <button class="done-toggle" data-done="4" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-5" data-step="5">
+  <div class="num" aria-hidden="true">5</div>
+  <div class="step-body">
+    <h2>Assemble the package</h2>
+    <p>Gather everything in one place before you open the submission form.</p>
+    <div class="groups">
+      <div class="group"><h3>Front matter</h3><ul>
+        <li>Cover letter, one or two paragraphs</li>
+        <li>Title</li>
+        <li>Each author's name, credentials, affiliation, and role</li>
+        <li>Corresponding author's name and email</li>
+      </ul></div>
+      <div class="group"><h3>Article</h3><ul>
+        <li>Abstract: structured for research-style types, a short unstructured summary for Perspectives, Personal Essays, and Letters</li>
+        <li>Body with section headings, up to 2,000 words</li>
+        <li>Reference list</li>
+        <li>Figures and tables with captions and the underlying numbers</li>
+      </ul></div>
+      <div class="group"><h3>Statements</h3><ul>
+        <li>Conflict of interest statement, even if you have none to declare</li>
+        <li>Acknowledgements, if any</li>
+        <li>Where else the work has been published or submitted, if anywhere</li>
+      </ul></div>
+    </div>
+    <button class="done-toggle" data-done="5" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-6" data-step="6">
+  <div class="num" aria-hidden="true">6</div>
+  <div class="step-body">
+    <h2>Run the final check</h2>
+    <p>Tick each item when it is true of your manuscript.</p>
+    <ul class="checks" id="checks"></ul>
+    <p class="ready" id="ready" aria-live="polite"></p>
+    <button class="done-toggle" data-done="6" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+<section class="step" id="step-7" data-step="7">
+  <div class="num" aria-hidden="true">7</div>
+  <div class="step-body">
+    <h2>Submit, then know what comes next</h2>
+    <p>Submit through the FULGME Call for Submissions form. Submissions are accepted year-round, and there are no fees at any stage.</p>
+    <a class="cta" style="justify-self:start;margin:0" href="https://event.fourwaves.com/624ae48b-a95e-4903-892e-851e6c6c1023" target="_blank" rel="noopener">Open the submission form</a>
+    <h3>After you submit</h3>
+    <ol class="timeline">
+      <li><div><b>Acknowledgement</b>The editors confirm receipt and check that your submission is in scope and complete.</div></li>
+      <li><div><b>Review</b>Four independent reviewers read your work. Reviewers see your name; you do not see theirs. No one with a relationship to your work reviews it.</div></li>
+      <li><div><b>Decision</b>The Editor in Chief decides, based on all four reviews: accept, accept with revisions, revise and resubmit, or decline. Expect roughly 90 days from submission to decision.</div></li>
+      <li><div><b>Revision</b>If revisions are requested, you receive the reviewer comments and a date to return your revised manuscript.</div></li>
+      <li><div><b>Publication</b>Accepted articles appear in the next issue.</div></li>
+    </ol>
+    <h3>Once published</h3>
+    <ul class="plain">
+      <li>Your article gets a Crossref DOI and its own permanent web address, ready for your CV or promotion file.</li>
+      <li>It is free to read in HTML and PDF.</li>
+      <li>You keep the copyright. FULGME publishes under CC BY-NC-ND 4.0, so you can deposit it in an institutional repository and share it with colleagues.</li>
+    </ul>
+    <button class="done-toggle" data-done="7" aria-pressed="false"><span class="box"></span>Mark step done</button>
+  </div>
+</section>
+
+    <div class="guide-foot">
+      <p>This guide summarizes the <a href="../for-authors/">For Authors</a> page, last reviewed 29 October 2026. Where the two differ, the For Authors page governs.</p>
+      <p>Trouble with the form or a question about a policy: <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
+      <button class="reset" id="reset" type="button">Clear my progress</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap pwrap">
+    <p><a href="../">Issues</a> &nbsp;&middot;&nbsp; <a href="../about/">About</a> &nbsp;&middot;&nbsp;
+       <a href="../editorial-board/">Editorial Board</a> &nbsp;&middot;&nbsp;
+       <a href="../policies/">Policies</a> &nbsp;&middot;&nbsp; <a href="../for-authors/">For Authors</a> &nbsp;&middot;&nbsp; <a href="https://www.fulgme.org">fulgme.org</a></p>
+    <p class="legal">&copy; The author(s). Published by the Forum for United Leaders in Graduate Medical
+      Education under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> &nbsp;&bull;&nbsp;
+      ISSN 3065-582X &nbsp;&bull;&nbsp; ISSN-L 3065-582X &nbsp;&bull;&nbsp; Journal DOI 10.70785/IHSN6820 &nbsp;&bull;&nbsp;
+      <a href="mailto:info@fulgme.org">info@fulgme.org</a></p>
+  </div>
+</footer>
+<script>
+(function(){
+  var KEY='fulgme-author-guide-v1';
+  var state={done:{},checks:{},type:null};
+  try{var s=JSON.parse(localStorage.getItem(KEY)||'null');if(s)state=Object.assign(state,s);}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+
+  var TYPES=[
+    {id:'research',name:'Research',fit:'I ran an original study with a stated method and results.',abs:'req',extra:''},
+    {id:'brief',name:'Brief Report',fit:'I have outcome data from a shorter piece of work, often one initiative at one site.',abs:'req',extra:''},
+    {id:'innovation',name:'Innovation',fit:'I built and assessed a new approach that others could replicate.',abs:'req',extra:'Describe what it took to run: cost, time, materials, training, technology, and how participants received it. Give enough detail for others to replicate it.'},
+    {id:'pi',name:'Process Improvement',fit:'I changed a workflow or system and learned something from it.',abs:'req',extra:'Describe the change and what you learned.'},
+    {id:'bp',name:'Best Practices',fit:'I want to share practical guidance drawn from experience.',abs:'req',extra:''},
+    {id:'review',name:'Review',fit:'I pulled together existing literature or practice on a GME topic.',abs:'req',extra:''},
+    {id:'perspective',name:'Perspective',fit:'I have an informed argument or professional reflection, grounded in experience.',abs:'no',extra:''},
+    {id:'essay',name:'Personal Essay',fit:'I want to tell a first-person account from my GME work that others in the role can learn from.',abs:'no',extra:''},
+    {id:'letter',name:'Letter to the Editor',fit:'I am responding to a FULGME article or raising a short question facing GME administration.',abs:'no',extra:''}
+  ];
+  var ABS={
+    req:['req','Structured abstract required','Up to 250 words, using these headings: Background, Objective, Methods, Results, Conclusions.'],
+    no:['unst','Unstructured abstract required','Write a short paragraph of up to 150 words summarizing your article. No section headings needed.']
+  };
+
+  var choices=document.getElementById('choices'),result=document.getElementById('result');
+  TYPES.forEach(function(t){
+    var l=document.createElement('label');l.className='choice';
+    l.innerHTML='<input type="radio" name="atype" id="t-'+t.id+'" value="'+t.id+'"><span>'+t.fit+'</span>';
+    choices.appendChild(l);
+  });
+  function renderType(){
+    var t=TYPES.find(function(x){return x.id===state.type;});
+    choices.querySelectorAll('.choice').forEach(function(l){var i=l.querySelector('input');i.checked=(i.value===state.type);l.classList.toggle('on',i.checked);});
+    if(!t){result.innerHTML='<p>Your article type, abstract requirement, and any type-specific notes will appear here.</p>';return;}
+    var a=ABS[t.abs];
+    result.innerHTML='<div class="type">'+t.name+'</div><div><span class="pill '+a[0]+'">'+a[1]+'</span></div>'+(a[2]?'<p>'+a[2]+'</p>':'')+(t.extra?'<p>'+t.extra+'</p>':'');
+  }
+  choices.addEventListener('change',function(e){state.type=e.target.value;save();renderType();});
+
+  var draft=document.getElementById('draft'),meter=document.getElementById('meter'),line=document.getElementById('countLine');
+  draft.addEventListener('input',function(){
+    var n=(draft.value.trim().match(/\S+/g)||[]).length;
+    meter.firstElementChild.style.width=Math.min(100,n/20)+'%';
+    meter.classList.toggle('over',n>2000);
+    line.textContent=n.toLocaleString()+' of 2,000 words'+(n>2000?'. Cut '+(n-2000).toLocaleString()+' words before you submit.':'');
+  });
+
+  var sortA=document.getElementById('sortA');
+  document.querySelectorAll('[data-sort]').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('[data-sort]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+      sortA.textContent=b.dataset.sort==='yes'?'List them as an author. They must approve the submitted version and be accountable for its content.':'Thank them in the acknowledgements.';
+    });
+  });
+
+  var CHECKS=[
+    'The article is within the 2,000-word limit',
+    'A cover letter is attached',
+    "The corresponding author's name and email are on the title page",
+    'References follow AMA style',
+    'Every quantitative claim has a citation',
+    'Author names, credentials, and affiliations are exactly as they should appear permanently',
+    'Any named individual has given written consent',
+    'A conflict of interest statement is included',
+    'Any prior or concurrent publication is disclosed',
+    'An abstract is included, structured or unstructured as your article type requires, and within its word limit',
+    'I hold the rights needed to publish the work under CC BY-NC-ND 4.0'
+  ];
+  var checks=document.getElementById('checks'),ready=document.getElementById('ready');
+  CHECKS.forEach(function(c,i){
+    var li=document.createElement('li');
+    li.innerHTML='<label><input type="checkbox" id="c'+i+'" data-i="'+i+'"><span>'+c+'</span></label>';
+    checks.appendChild(li);
+  });
+  function renderChecks(){
+    var n=0;checks.querySelectorAll('input').forEach(function(i){i.checked=!!state.checks[i.dataset.i];if(i.checked)n++;});
+    ready.classList.toggle('go',n===CHECKS.length);
+    ready.textContent=n===CHECKS.length?'All '+CHECKS.length+' checks complete. You are ready to submit.':n+' of '+CHECKS.length+' checks complete.';
+  }
+  checks.addEventListener('change',function(e){state.checks[e.target.dataset.i]=e.target.checked;save();renderChecks();});
+
+  var rail=document.getElementById('rail'),railCount=document.getElementById('railCount');
+  var titles=['Choose type','Draft sections','Authorship','References','Package','Final check','Submit'];
+  titles.forEach(function(t,i){var li=document.createElement('li');li.innerHTML='<a href="#step-'+(i+1)+'" aria-label="Step '+(i+1)+': '+t+'">'+(i+1)+'</a>';rail.appendChild(li);});
+  function renderDone(){
+    var n=0;
+    document.querySelectorAll('.done-toggle').forEach(function(b){
+      var d=!!state.done[b.dataset.done];if(d)n++;
+      b.setAttribute('aria-pressed',String(d));
+      b.lastChild.textContent=d?'Step done':'Mark step done';
+      b.querySelector('.box').textContent=d?'\u2713':'';
+      rail.children[b.dataset.done-1].firstChild.classList.toggle('done',d);
+    });
+    railCount.textContent=n+' of 7 done';
+  }
+  document.querySelectorAll('.done-toggle').forEach(function(b){
+    b.addEventListener('click',function(){state.done[b.dataset.done]=!state.done[b.dataset.done];save();renderDone();});
+  });
+
+  document.getElementById('reset').addEventListener('click',function(){
+    state={done:{},checks:{},type:null};save();renderType();renderChecks();renderDone();
+  });
+
+  renderType();renderChecks();renderDone();
+})();
+</script>
+</body>
+</html>
