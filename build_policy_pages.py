@@ -392,9 +392,10 @@ AUTHORS = f"""
       <li>Every author&rsquo;s full name, credentials, institutional affiliation, and role</li>
       <li>The corresponding author&rsquo;s name and email, for all correspondence through review and
           publication</li>
-      <li>A structured abstract for research, brief reports, innovations, and reviews, using Background,
-          Objective, Methods, Results, and Conclusions. Perspectives, personal essays, and letters to the
-          editor do not require one.</li>
+      <li>An abstract for every article type. Research, brief reports, innovations, process improvement,
+          best practices, and reviews use a structured abstract of up to 250 words, with the headings
+          Background, Objective, Methods, Results, and Conclusions. Perspectives, personal essays, and
+          letters to the editor use a short unstructured abstract of up to 150 words.</li>
       <li>The body of the article, with clear section headings, up to 2,000 words</li>
       <li><strong>A reference list for every factual or quantitative claim.</strong> If you state a
           percentage, a count, or a finding from a survey or dataset, cite the source.</li>
@@ -491,6 +492,7 @@ AUTHORS = f"""
       <li>Any named individual has given written consent</li>
       <li>A conflict of interest statement is included</li>
       <li>Any prior or concurrent publication is disclosed</li>
+      <li>An abstract is included, structured or unstructured as your article type requires, and within its word limit</li>
       <li>You hold the rights needed to publish the work under CC BY-NC-ND 4.0</li>
     </ul>
     <p>Affiliations and author names are worth double-checking. They become part of a permanent, citable
